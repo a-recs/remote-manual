@@ -15,7 +15,7 @@
 
 .md-typeset table:not([class]) {
   width: 100%;
-  font-size: 0.9rem;
+  font-size: inherit;
   table-layout: auto;
 }
 

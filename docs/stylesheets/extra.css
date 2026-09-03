@@ -45,4 +45,35 @@
   overflow-wrap: break-word;
 }
 
+/* 重要な囲み記事を読みやすくする */
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 1.2em 0;
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.md-typeset .admonition > *:not(.admonition-title),
+.md-typeset details > *:not(summary) {
+  font-size: 1rem;
+}
+
+.md-typeset .admonition p,
+.md-typeset details p {
+  margin: 0.6em 0;
+}
+
+.md-typeset .admonition ul,
+.md-typeset .admonition ol,
+.md-typeset details ul,
+.md-typeset details ol {
+  margin-top: 0.5em;
+}
+
 .md-typeset blockquote { border-left-width: 0.2rem; }

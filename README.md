@@ -4,6 +4,8 @@
 
 現在は **MetaMoJi ClassRoom 操作マニュアル** を掲載しています。
 
+公開URL（GitHub Pages）：https://jt0skz.github.io/remote-manual-public/
+
 ## 公開用の取扱い
 
 このリポジトリには、実在する学校名・教員名・生徒名・ユーザーID・団体ID・ログイン用QRコード等は掲載しません。

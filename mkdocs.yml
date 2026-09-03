@@ -1,0 +1,43 @@
+site_name: 遠隔教育運営マニュアル
+site_description: 遠隔授業の運営・機器・アプリ操作をまとめたWebマニュアル
+site_url: https://jt0skz.github.io/remote-manual-public/
+
+nav:
+  - ホーム: index.md
+  - MetaMoJi ClassRoom:
+      - 概要: metamoji/index.md
+      - 1. ログイン・学校選択: metamoji/01-login.md
+      - 2. マイボックスとクラスボックス: metamoji/02-box.md
+      - 3. 教材を準備・配布する: metamoji/03-material.md
+      - 4. レイヤーを理解する: metamoji/04-layer.md
+      - 5. 授業中の基本操作: metamoji/05-operation.md
+      - 6. 困ったとき: metamoji/06-trouble.md
+
+theme:
+  name: material
+  language: ja
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.highlight
+    - search.suggest
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: ダークモードに切り替える
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: ライトモードに切り替える
+
+markdown_extensions:
+  - admonition
+  - tables
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences
+
+extra_css:
+  - stylesheets/extra.css

@@ -48,20 +48,20 @@
 /* 重要な囲み記事を読みやすくする */
 .md-typeset .admonition,
 .md-typeset details {
-  font-size: 1rem;
+  font-size: inherit;
   line-height: 1.7;
   margin: 1.2em 0;
 }
 
 .md-typeset .admonition-title,
 .md-typeset summary {
-  font-size: 1rem;
+  font-size: inherit;
   font-weight: 700;
 }
 
 .md-typeset .admonition > *:not(.admonition-title),
 .md-typeset details > *:not(summary) {
-  font-size: 1rem;
+  font-size: inherit;
 }
 
 .md-typeset .admonition p,

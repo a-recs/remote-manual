@@ -1,6 +1,6 @@
 site_name: 遠隔教育運営マニュアル
 site_description: 遠隔授業の運営・機器・アプリ操作をまとめたWebマニュアル
-site_url: https://jt0skz.github.io/remote-manual-public/
+site_url: https://a-recs.github.io/remote-manual/
 
 nav:
   - ホーム: index.md

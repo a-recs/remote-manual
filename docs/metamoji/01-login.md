@@ -19,7 +19,7 @@ MetaMoJi ClassRoomを起動し、配布された**ログイン用QRコード**�
 2. **［QRコードでログイン］**を選択します。
 3. 配布されたログイン用QRコードをカメラにかざします。
 
-<img src="../images/metamoji/01-login.webp" alt="MetaMoJi ClassRoom 3 ログイン画面" style="display:block; width:420px; max-width:100%; height:auto; margin:1rem auto;">
+<img src="../../images/metamoji/01-login.webp" alt="MetaMoJi ClassRoom 3 ログイン画面" style="display:block; width:420px; max-width:100%; height:auto; margin:1rem auto;">
 
 !!! note "QRコードが使用できない場合"
     団体ID・ユーザーID・パスワードを入力してログインします。
@@ -37,7 +37,7 @@ MetaMoJi ClassRoomを起動し、配布された**ログイン用QRコード**�
 1. 学校を選択する画面を開きます。
 2. これから授業を行う学校を選択します。
 
-<img src="../images/metamoji/01-school-select.webp" alt="学校を選択する画面" style="display:block; width:420px; max-width:100%; height:auto; margin:1rem auto;">
+<img src="../../images/metamoji/01-school-select.webp" alt="学校を選択する画面" style="display:block; width:420px; max-width:100%; height:auto; margin:1rem auto;">
 
 ### 学校を切り替えると変わるもの
 

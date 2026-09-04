@@ -8,13 +8,17 @@
   }
 }
 
-/* 表を読みやすくする */
+/* 表を読みやすくする：内容が短い表は必要以上に横へ広げない */
 .md-typeset__table {
-  width: 100%;
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 .md-typeset table:not([class]) {
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   font-size: inherit;
   table-layout: auto;
 }
@@ -48,6 +52,10 @@
 /* 重要な囲み記事を読みやすくする */
 .md-typeset .admonition,
 .md-typeset details {
+  width: fit-content;
+  min-width: min(36rem, 100%);
+  max-width: 100%;
+  box-sizing: border-box;
   font-size: inherit;
   line-height: 1.7;
   margin: 1.2em 0;
@@ -74,6 +82,25 @@
 .md-typeset details ul,
 .md-typeset details ol {
   margin-top: 0.5em;
+}
+
+/* レイヤーの見える・見えないを色でも区別する */
+.layer-no {
+  color: #c62828;
+  font-weight: 800;
+}
+
+.layer-yes {
+  color: #1565c0;
+  font-weight: 800;
+}
+
+[data-md-color-scheme="slate"] .layer-no {
+  color: #ff6b6b;
+}
+
+[data-md-color-scheme="slate"] .layer-yes {
+  color: #64b5f6;
 }
 
 .md-typeset blockquote { border-left-width: 0.2rem; }

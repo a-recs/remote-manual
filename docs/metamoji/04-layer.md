@@ -11,8 +11,8 @@
 | PDFなど、元になる教材を置く | **教材レイヤー** |
 
 !!! danger "ここが重要"
-    **先生レイヤーは生徒の画面には残りません。**  
-    **板書レイヤーは生徒の画面にも残ります。**
+    <strong>先生レイヤーは生徒の画面には<span class="layer-no">残りません</span>。</strong>  
+    <strong>板書レイヤーは生徒の画面にも<span class="layer-yes">残ります</span>。</strong>
 
 ---
 

@@ -8,6 +8,63 @@
   }
 }
 
+/* ホーム：主要マニュアルへの入口 */
+.manual-home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.manual-home-card {
+  display: flex;
+  min-height: 10.5rem;
+  padding: 1.15rem 1.2rem;
+  box-sizing: border-box;
+  flex-direction: column;
+  gap: 0.55rem;
+  border: 0.05rem solid var(--md-default-fg-color--lightest);
+  border-radius: 0.6rem;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  text-decoration: none;
+  box-shadow: 0 0.12rem 0.35rem rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.manual-home-card:hover {
+  transform: translateY(-0.12rem);
+  border-color: var(--md-accent-fg-color);
+  box-shadow: 0 0.28rem 0.7rem rgba(0, 0, 0, 0.10);
+}
+
+.manual-home-card strong {
+  font-size: 1.08rem;
+  line-height: 1.45;
+}
+
+.manual-home-card > span:last-child {
+  color: var(--md-default-fg-color--light);
+  line-height: 1.65;
+}
+
+.manual-home-card__eyebrow {
+  width: fit-content;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+}
+
+@media screen and (max-width: 60em) {
+  .manual-home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .manual-home-card {
+    min-height: auto;
+  }
+}
+
 /* 表を読みやすくする：内容が短い表は必要以上に横へ広げない */
 .md-typeset__table {
   display: block;

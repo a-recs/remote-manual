@@ -19,7 +19,7 @@ MetaMoJi ClassRoomを起動し、配布された**ログイン用QRコード**�
 2. **［QRコードでログイン］**を選択します。
 3. 配布されたログイン用QRコードをカメラにかざします。
 
-<img src="../../images/metamoji/01-login.webp" alt="MetaMoJi ClassRoom 3 ログイン画面" style="display:block; width:420px; max-width:100%; height:auto; margin:1rem auto;">
+<img src="../../images/metamoji/01-login.svg" alt="MetaMoJi ClassRoom 3 ログイン画面" style="display:block; width:420px; max-width:100%; height:auto; margin:1rem auto;">
 
 !!! note "QRコードが使用できない場合"
     団体ID・ユーザーID・パスワードを入力してログインします。

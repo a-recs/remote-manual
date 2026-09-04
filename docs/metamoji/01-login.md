@@ -9,6 +9,8 @@
 
 ## 1-1　MetaMoJi ClassRoomにログインする
 
+[MetaMoJi ClassRoom 3 ログイン画面を開く](https://classroom.metamoji.com/cr/){ .md-button .md-button--primary target="_blank" }
+
 MetaMoJi ClassRoomを起動し、配布された**ログイン用QRコード**を使用してログインします。
 
 ### QRコードでログインする【推奨】

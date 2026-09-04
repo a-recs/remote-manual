@@ -11,7 +11,6 @@ nav:
       - 3. 教材を準備・配布する: metamoji/03-material.md
       - 4. レイヤーを理解する: metamoji/04-layer.md
       - 5. 授業中の基本操作: metamoji/05-operation.md
-      - 6. 困ったとき: metamoji/06-trouble.md
 
 theme:
   name: material

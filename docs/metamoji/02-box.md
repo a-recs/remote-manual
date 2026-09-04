@@ -29,7 +29,54 @@ MetaMoJi ClassRoomでは、遠隔授業の準備と実施で主に **「マイ�
 
 教材が増えてきた場合は、必要に応じてフォルダを作成して整理します。
 
-フォルダ構成に決まりはありません。学校別・単元別・授業回別など、**自分が教材を探しやすい方法**で整理します。
+フォルダ構成に決まりはありません。**学校ごと・学期ごと・単元ごと**など、自分が教材を探しやすい方法で整理します。
+
+### 整理のしかたの例
+
+以下は一例です。**必ずこの形にそろえる必要はありません。** 複数の分け方を組み合わせても構いません。
+
+<div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:1rem; margin:1rem 0;">
+
+<div style="border:1px solid var(--md-default-fg-color--lightest); border-radius:0.4rem; padding:1rem;">
+<strong>学校ごとに整理</strong>
+<pre style="margin-bottom:0;">マイボックス
+├─ A高校
+│  ├─ 数学Ⅰ
+│  └─ 数学A
+├─ B高校
+│  ├─ 数学Ⅰ
+│  └─ 数学A
+└─ C高校
+   └─ 数学Ⅰ</pre>
+</div>
+
+<div style="border:1px solid var(--md-default-fg-color--lightest); border-radius:0.4rem; padding:1rem;">
+<strong>学期ごとに整理</strong>
+<pre style="margin-bottom:0;">マイボックス
+├─ 1学期
+│  ├─ 数学Ⅰ
+│  └─ 数学A
+├─ 2学期
+│  ├─ 数学Ⅰ
+│  └─ 数学A
+└─ 3学期
+   └─ 数学Ⅰ</pre>
+</div>
+
+<div style="border:1px solid var(--md-default-fg-color--lightest); border-radius:0.4rem; padding:1rem;">
+<strong>単元ごとに整理</strong>
+<pre style="margin-bottom:0;">マイボックス
+├─ 数と式
+│  ├─ 第1回
+│  └─ 第2回
+├─ 二次関数
+│  ├─ 第1回
+│  └─ 第2回
+└─ 図形と計量
+   └─ 第1回</pre>
+</div>
+
+</div>
 
 !!! tip "ポイント"
     細かく分けすぎず、授業前に目的の教材をすぐ開ける構成にします。
@@ -49,6 +96,52 @@ MetaMoJi ClassRoomでは、遠隔授業の準備と実施で主に **「マイ�
 授業ノートが増えてきた場合は、必要に応じてフォルダを作成して整理します。
 
 クラスボックスは生徒も利用するため、**生徒が授業ノートを見つけやすい構成**にします。
+
+クラスボックス自体は学校・クラスごとに分かれているため、その中を **学期ごと・単元ごと・授業回ごと** などに整理できます。
+
+### 整理のしかたの例
+
+以下は一例です。授業の進め方や生徒の使いやすさに合わせて整理します。
+
+<div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:1rem; margin:1rem 0;">
+
+<div style="border:1px solid var(--md-default-fg-color--lightest); border-radius:0.4rem; padding:1rem;">
+<strong>学期ごとに整理</strong>
+<pre style="margin-bottom:0;">クラスボックス
+├─ 1学期
+│  ├─ 第1回 授業ノート
+│  └─ 第2回 授業ノート
+├─ 2学期
+│  ├─ 第1回 授業ノート
+│  └─ 第2回 授業ノート
+└─ 3学期</pre>
+</div>
+
+<div style="border:1px solid var(--md-default-fg-color--lightest); border-radius:0.4rem; padding:1rem;">
+<strong>単元ごとに整理</strong>
+<pre style="margin-bottom:0;">クラスボックス
+├─ 数と式
+│  ├─ 第1回 授業ノート
+│  └─ 第2回 授業ノート
+├─ 二次関数
+│  └─ 第1回 授業ノート
+└─ 図形と計量</pre>
+</div>
+
+<div style="border:1px solid var(--md-default-fg-color--lightest); border-radius:0.4rem; padding:1rem;">
+<strong>授業回ごとに整理</strong>
+<pre style="margin-bottom:0;">クラスボックス
+├─ 第1回 授業ノート
+├─ 第2回 授業ノート
+├─ 第3回 授業ノート
+├─ 第4回 授業ノート
+└─ 第5回 授業ノート</pre>
+</div>
+
+</div>
+
+!!! note "整理方法に決まりはありません"
+    フォルダの分け方は一例です。**教員が管理しやすく、生徒が授業ノートを見つけやすいこと**を優先します。
 
 ---
 

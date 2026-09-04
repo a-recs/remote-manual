@@ -48,3 +48,4 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/navigation.css

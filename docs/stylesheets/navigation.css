@@ -1,0 +1,105 @@
+/* 左側ナビゲーションをカテゴリごとに見分けやすくする */
+
+/* カテゴリ見出し共通 */
+.md-nav__item:has(> nav[aria-label="MetaMoJi ClassRoom"]) > .md-nav__link,
+.md-nav__item:has(> nav[aria-label="操作編"]) > .md-nav__link,
+.md-nav__item:has(> nav[aria-label="管理者編"]) > .md-nav__link,
+.md-nav__item:has(> nav[aria-label="Neat Pulse"]) > .md-nav__link {
+  margin: 0.18rem 0;
+  padding: 0.38rem 0.5rem;
+  border-left: 0.2rem solid transparent;
+  border-radius: 0.3rem;
+  font-weight: 700;
+}
+
+/* MetaMoJi ClassRoom：青 */
+.md-nav__item:has(> nav[aria-label="MetaMoJi ClassRoom"]) > .md-nav__link {
+  color: #3157a4;
+  background: rgba(63, 81, 181, 0.10);
+  border-left-color: #3f51b5;
+}
+
+/* 操作編：青緑 */
+.md-nav__item:has(> nav[aria-label="操作編"]) > .md-nav__link {
+  color: #087f8c;
+  background: rgba(0, 150, 136, 0.09);
+  border-left-color: #009688;
+}
+
+/* 管理者編：オレンジ */
+.md-nav__item:has(> nav[aria-label="管理者編"]) > .md-nav__link {
+  color: #b85c00;
+  background: rgba(245, 124, 0, 0.10);
+  border-left-color: #f57c00;
+}
+
+/* Neat Pulse：緑 */
+.md-nav__item:has(> nav[aria-label="Neat Pulse"]) > .md-nav__link {
+  color: #2e7d32;
+  background: rgba(46, 125, 50, 0.10);
+  border-left-color: #43a047;
+}
+
+/* 操作編で現在開いているページ */
+.md-nav__item:has(> nav[aria-label="操作編"]) .md-nav__link--active {
+  color: #00796b;
+  font-weight: 700;
+  background: rgba(0, 150, 136, 0.08);
+  border-radius: 0.25rem;
+}
+
+/* 管理者編で現在開いているページ */
+.md-nav__item:has(> nav[aria-label="管理者編"]) .md-nav__link--active {
+  color: #e66a00;
+  font-weight: 700;
+  background: rgba(245, 124, 0, 0.09);
+  border-radius: 0.25rem;
+}
+
+/* Neat Pulseで現在開いているページ */
+.md-nav__item:has(> nav[aria-label="Neat Pulse"]) .md-nav__link--active {
+  color: #2e7d32;
+  font-weight: 700;
+  background: rgba(46, 125, 50, 0.08);
+  border-radius: 0.25rem;
+}
+
+/* ダークモード */
+[data-md-color-scheme="slate"] .md-nav__item:has(> nav[aria-label="MetaMoJi ClassRoom"]) > .md-nav__link {
+  color: #aebcff;
+  background: rgba(121, 134, 203, 0.16);
+  border-left-color: #9fa8da;
+}
+
+[data-md-color-scheme="slate"] .md-nav__item:has(> nav[aria-label="操作編"]) > .md-nav__link {
+  color: #80cbc4;
+  background: rgba(38, 166, 154, 0.14);
+  border-left-color: #4db6ac;
+}
+
+[data-md-color-scheme="slate"] .md-nav__item:has(> nav[aria-label="管理者編"]) > .md-nav__link {
+  color: #ffb56b;
+  background: rgba(251, 140, 0, 0.15);
+  border-left-color: #ff9800;
+}
+
+[data-md-color-scheme="slate"] .md-nav__item:has(> nav[aria-label="Neat Pulse"]) > .md-nav__link {
+  color: #9ccc9f;
+  background: rgba(76, 175, 80, 0.14);
+  border-left-color: #66bb6a;
+}
+
+[data-md-color-scheme="slate"] .md-nav__item:has(> nav[aria-label="操作編"]) .md-nav__link--active {
+  color: #80cbc4;
+  background: rgba(38, 166, 154, 0.13);
+}
+
+[data-md-color-scheme="slate"] .md-nav__item:has(> nav[aria-label="管理者編"]) .md-nav__link--active {
+  color: #ffb56b;
+  background: rgba(251, 140, 0, 0.14);
+}
+
+[data-md-color-scheme="slate"] .md-nav__item:has(> nav[aria-label="Neat Pulse"]) .md-nav__link--active {
+  color: #9ccc9f;
+  background: rgba(76, 175, 80, 0.13);
+}

@@ -1,26 +1,40 @@
-/* 左側ナビゲーションをカテゴリごとに見分けやすくする */
+/* 左側ナビゲーション：入口だけを色付きで強調する */
 
-/* 共通：カテゴリ見出し */
+/* 分類見出し（MetaMoJi ClassRoom / Neat Pulse）は色を付けない */
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__link,
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link,
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__container > .md-nav__link,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__container > .md-nav__link {
+  margin-top: 0.55rem !important;
+  padding: 0.2rem 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: var(--md-default-fg-color--light) !important;
+  font-size: 0.78rem !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.01em;
+}
+
+/* 入口4項目 共通 */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link,
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link,
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container > .md-nav__link,
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link {
-  margin: 0.16rem 0 !important;
-  padding: 0.34rem 0.5rem !important;
-  border-left: 0.22rem solid transparent !important;
-  border-radius: 0.28rem !important;
-  font-weight: 700 !important;
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link {
+  margin: 0.18rem 0 0.3rem !important;
+  padding: 0.42rem 0.55rem !important;
+  border-left: 0.24rem solid transparent !important;
+  border-radius: 0.34rem !important;
+  font-weight: 800 !important;
+  line-height: 1.45 !important;
 }
 
-/* MetaMoJi ClassRoom：青 */
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link {
+/* ホーム：青 */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link {
   color: #3157a4 !important;
-  background-color: rgba(63, 81, 181, 0.12) !important;
+  background-color: rgba(63, 81, 181, 0.10) !important;
   border-left-color: #3f51b5 !important;
 }
 
@@ -28,7 +42,7 @@
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link,
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container > .md-nav__link {
   color: #087f8c !important;
-  background-color: rgba(0, 150, 136, 0.11) !important;
+  background-color: rgba(0, 150, 136, 0.10) !important;
   border-left-color: #009688 !important;
 }
 
@@ -36,86 +50,65 @@
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__link,
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link {
   color: #b85c00 !important;
-  background-color: rgba(245, 124, 0, 0.12) !important;
+  background-color: rgba(245, 124, 0, 0.11) !important;
   border-left-color: #f57c00 !important;
 }
 
-/* Neat Pulse：緑 */
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__container > .md-nav__link {
+/* 端末確認・遠隔操作：緑 */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link {
   color: #2e7d32 !important;
-  background-color: rgba(46, 125, 50, 0.11) !important;
+  background-color: rgba(46, 125, 50, 0.10) !important;
   border-left-color: #43a047 !important;
 }
 
-/* 現在開いているページ：操作編 */
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
-  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) .md-nav__link--active {
-  color: #00796b !important;
+/* 個別ページは通常表示。現在ページだけ文字を少し強調 */
+.md-nav--primary .md-nav__nav .md-nav__link--active,
+.md-nav--primary .md-nav__item .md-nav__item .md-nav__link--active {
   font-weight: 800 !important;
-  background-color: rgba(0, 150, 136, 0.10) !important;
-  border-radius: 0.24rem !important;
 }
 
-/* 現在開いているページ：管理者編 */
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
-  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) .md-nav__link--active {
-  color: #df6500 !important;
-  font-weight: 800 !important;
-  background-color: rgba(245, 124, 0, 0.11) !important;
-  border-radius: 0.24rem !important;
+/* 入口が現在ページの場合は少し濃くする */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link--active {
+  background-color: rgba(63, 81, 181, 0.18) !important;
 }
 
-/* 現在開いているページ：Neat Pulse */
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) .md-nav__link--active {
-  color: #2e7d32 !important;
-  font-weight: 800 !important;
-  background-color: rgba(46, 125, 50, 0.10) !important;
-  border-radius: 0.24rem !important;
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link--active,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container > .md-nav__link--active {
+  background-color: rgba(0, 150, 136, 0.18) !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__link--active,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link--active {
+  background-color: rgba(245, 124, 0, 0.19) !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link--active {
+  background-color: rgba(46, 125, 50, 0.18) !important;
 }
 
 /* ダークモード */
-[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__link,
-[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link {
+[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link {
   color: #b8c4ff !important;
-  background-color: rgba(121, 134, 203, 0.20) !important;
+  background-color: rgba(121, 134, 203, 0.18) !important;
   border-left-color: #9fa8da !important;
 }
 
 [data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link,
 [data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container > .md-nav__link {
   color: #80cbc4 !important;
-  background-color: rgba(38, 166, 154, 0.17) !important;
+  background-color: rgba(38, 166, 154, 0.16) !important;
   border-left-color: #4db6ac !important;
 }
 
 [data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__link,
 [data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link {
   color: #ffba73 !important;
-  background-color: rgba(251, 140, 0, 0.19) !important;
+  background-color: rgba(251, 140, 0, 0.17) !important;
   border-left-color: #ff9800 !important;
 }
 
-[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__link,
-[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__container > .md-nav__link {
-  color: #a5d6a7 !important;
-  background-color: rgba(76, 175, 80, 0.17) !important;
-  border-left-color: #66bb6a !important;
-}
-
-[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
-  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) .md-nav__link--active {
-  color: #80cbc4 !important;
-  background-color: rgba(38, 166, 154, 0.16) !important;
-}
-
-[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
-  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) .md-nav__link--active {
-  color: #ffba73 !important;
-  background-color: rgba(251, 140, 0, 0.18) !important;
-}
-
-[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) .md-nav__link--active {
+[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link {
   color: #a5d6a7 !important;
   background-color: rgba(76, 175, 80, 0.16) !important;
+  border-left-color: #66bb6a !important;
 }

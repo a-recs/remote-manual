@@ -1,36 +1,22 @@
-# MetaMoJi ClassRoom 操作マニュアル
+# MetaMoJi ClassRoom
 
-本マニュアルは、遠隔授業でMetaMoJi ClassRoomを使用する教員を対象に、**授業を実施するために必要な基本操作**をまとめたものです。
+遠隔授業で使用するMetaMoJi ClassRoomのマニュアルです。
 
-MetaMoJi ClassRoomには多くの機能がありますが、本マニュアルでは日常的な遠隔授業で使用する操作を中心に説明します。
+目的に合わせて、次の2つから選択してください。
 
-[MetaMoJi ClassRoom 3 ログイン画面を開く](https://classroom.metamoji.com/cr/){ .md-button .md-button--primary target="_blank" }
+<div class="manual-home-grid">
+  <a class="manual-home-card" href="operation/">
+    <span class="manual-home-card__eyebrow">授業を行う先生向け</span>
+    <strong>操作編</strong>
+    <span>ログイン、学校選択、教材準備・配布、授業中の基本操作を確認します。</span>
+  </a>
 
-## 授業までの基本的な流れ
+  <a class="manual-home-card" href="admin/">
+    <span class="manual-home-card__eyebrow">管理担当者向け</span>
+    <strong>管理者編</strong>
+    <span>新しい受信校の準備、年度更新、年度途中の追加・変更を確認します。</span>
+  </a>
+</div>
 
-1. MetaMoJi ClassRoomにログインする
-2. **授業を行う学校を選択する**
-3. 教材をPDFで準備する
-4. MetaMoJiに教材を読み込む
-5. 授業ノートとしてクラスに配布する
-6. 授業を実施する
-
-!!! warning "最初に学校を選択"
-    複数の学校を担当している場合は、教材の準備・配布を始める前に、**授業を行う学校を選択します。**
-
-## このマニュアルで扱う内容
-
-- ログインと学校選択
-- マイボックスとクラスボックス
-- 教材の準備・配布
-- レイヤー
-- 授業中の基本操作
-- モニタリング
-
----
-
-## 管理者の方へ
-
-年度・学校・ユーザー・クラスの登録や年度更新については、**管理者編**にまとめています。
-
-[MetaMoJi ClassRoom 管理者編を開く](admin/index.md){ .md-button target="_self" }
+!!! tip "どちらを見ればいい？"
+    普段の授業でMetaMoJiを使う場合は**「操作編」**、年度・学校・ユーザー・クラスを準備する場合は**「管理者編」**を確認します。

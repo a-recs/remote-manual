@@ -1,28 +1,43 @@
-/* 左側ナビゲーション：最上位3項目を入口ボタンとして表示 */
+/* 左側ナビゲーション：最上位3項目をバナー型ボタンにする */
 
-/* ------------------------------
-   共通
------------------------------- */
+/* ==============================
+   最上位：ホーム / MetaMoJi / Neat Pulse
+============================== */
+
+/* ホーム・Neat Pulse */
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link,
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__link {
-  margin: 0.22rem 0 !important;
-  padding: 0.52rem 0.7rem !important;
-  border-left: 0.24rem solid transparent !important;
-  border-radius: 0.42rem !important;
-  font-weight: 800 !important;
-  line-height: 1.4 !important;
-}
-
-/* MetaMoJi ClassRoom はリンク＋展開矢印を1つのボタンにまとめる */
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container {
   display: flex !important;
   align-items: center !important;
-  margin: 0.22rem 0 !important;
+  min-height: 3rem !important;
+  margin: 0.42rem 0 !important;
+  padding: 0.68rem 0.82rem !important;
+  border: 1px solid transparent !important;
+  border-left-width: 0.3rem !important;
+  border-radius: 0.62rem !important;
+  box-sizing: border-box !important;
+  font-size: 0.93rem !important;
+  font-weight: 800 !important;
+  line-height: 1.35 !important;
+  box-shadow: 0 0.12rem 0.35rem rgba(0, 0, 0, 0.08) !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease !important;
+}
+
+/* MetaMoJi：タイトル＋展開矢印を1枚のバナーにする */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container {
+  display: flex !important;
+  align-items: stretch !important;
+  min-height: 3rem !important;
+  margin: 0.42rem 0 !important;
   padding: 0 !important;
   overflow: hidden !important;
-  border-left: 0.24rem solid #3f51b5 !important;
-  border-radius: 0.42rem !important;
+  border: 1px solid #5b72bf !important;
+  border-left: 0.3rem solid #3f51b5 !important;
+  border-radius: 0.62rem !important;
+  box-sizing: border-box !important;
   background: rgba(63, 81, 181, 0.11) !important;
+  box-shadow: 0 0.12rem 0.35rem rgba(0, 0, 0, 0.08) !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease !important;
 }
 
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link {
@@ -32,52 +47,98 @@
   background: transparent !important;
   box-shadow: none !important;
   color: #3157a4 !important;
+  font-size: 0.93rem !important;
   font-weight: 800 !important;
+  line-height: 1.35 !important;
 }
 
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link:first-child {
   flex: 1 1 auto !important;
   min-width: 0 !important;
-  padding: 0.52rem 0.7rem !important;
+  padding: 0.68rem 0.82rem !important;
 }
 
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link:last-child {
-  flex: 0 0 2.2rem !important;
-  width: 2.2rem !important;
-  min-width: 2.2rem !important;
-  padding: 0.52rem 0.42rem !important;
+  flex: 0 0 2.6rem !important;
+  width: 2.6rem !important;
+  min-width: 2.6rem !important;
+  padding: 0.68rem 0.55rem !important;
   justify-content: center !important;
-  border-left: 1px solid rgba(63, 81, 181, 0.16) !important;
+  border-left: 1px solid rgba(63, 81, 181, 0.18) !important;
 }
 
-/* ホーム */
+/* ホーム：青 */
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link {
-  color: #3157a4 !important;
-  background: rgba(63, 81, 181, 0.10) !important;
+  color: #274c93 !important;
+  background: rgba(63, 81, 181, 0.09) !important;
+  border-color: rgba(63, 81, 181, 0.28) !important;
   border-left-color: #3f51b5 !important;
 }
 
-/* Neat Pulse */
+/* Neat Pulse：緑 */
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__link {
-  color: #2e7d32 !important;
-  background: rgba(46, 125, 50, 0.10) !important;
+  color: #256b2a !important;
+  background: rgba(46, 125, 50, 0.09) !important;
+  border-color: rgba(46, 125, 50, 0.28) !important;
   border-left-color: #43a047 !important;
 }
 
-/* ------------------------------
+/* ホバー：押せるボタンだと分かるように */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link:hover,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__link:hover,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container:hover {
+  transform: translateX(0.08rem) !important;
+  box-shadow: 0 0.22rem 0.55rem rgba(0, 0, 0, 0.13) !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link:hover {
+  background: rgba(63, 81, 181, 0.15) !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container:hover {
+  background: rgba(63, 81, 181, 0.16) !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__link:hover {
+  background: rgba(46, 125, 50, 0.15) !important;
+}
+
+/* 現在開いている最上位入口は少し濃くする */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link--active {
+  background: rgba(63, 81, 181, 0.18) !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2):has(.md-nav__link--active) > .md-nav__container {
+  background: rgba(63, 81, 181, 0.18) !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__link--active {
+  background: rgba(46, 125, 50, 0.18) !important;
+}
+
+/* ==============================
    MetaMoJi配下：操作編 / 管理者編
------------------------------- */
+   最上位ボタンより控えめにする
+============================== */
+
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav {
+  margin-top: 0.2rem !important;
+}
+
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
   > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container,
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
   > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container {
   display: flex !important;
   align-items: center !important;
-  margin: 0.16rem 0 0.22rem 0.35rem !important;
+  margin: 0.1rem 0 0.14rem 0.55rem !important;
   padding: 0 !important;
   overflow: hidden !important;
-  border-left: 0.2rem solid transparent !important;
-  border-radius: 0.34rem !important;
+  border: 0 !important;
+  border-left: 0.18rem solid transparent !important;
+  border-radius: 0.28rem !important;
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
@@ -98,25 +159,23 @@
   > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link:first-child {
   flex: 1 1 auto !important;
   min-width: 0 !important;
-  padding: 0.4rem 0.58rem !important;
+  padding: 0.34rem 0.48rem !important;
 }
 
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
   > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container > .md-nav__link:last-child,
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
   > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link:last-child {
-  flex: 0 0 2rem !important;
-  width: 2rem !important;
-  min-width: 2rem !important;
-  padding: 0.4rem 0.36rem !important;
+  flex: 0 0 1.8rem !important;
+  width: 1.8rem !important;
+  min-width: 1.8rem !important;
+  padding: 0.34rem 0.3rem !important;
   justify-content: center !important;
-  border-left: 1px solid rgba(127, 127, 127, 0.14) !important;
 }
 
 /* 操作編 */
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
   > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container {
-  background: rgba(0, 150, 136, 0.09) !important;
   border-left-color: #009688 !important;
 }
 
@@ -128,7 +187,6 @@
 /* 管理者編 */
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
   > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container {
-  background: rgba(245, 124, 0, 0.09) !important;
   border-left-color: #f57c00 !important;
 }
 
@@ -137,43 +195,52 @@
   color: #b85c00 !important;
 }
 
-/* 現在のページ */
+/* 子メニューのホバー */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container:hover {
+  background: rgba(0, 150, 136, 0.07) !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container:hover {
+  background: rgba(245, 124, 0, 0.07) !important;
+}
+
 .md-nav--primary .md-nav__link--active {
   font-weight: 800 !important;
 }
 
-/* ダークモード */
-[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link,
-[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link {
-  color: #b8c4ff !important;
+/* ==============================
+   ダークモード
+============================== */
+
+[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link {
+  color: #c3ccff !important;
+  background: rgba(121, 134, 203, 0.18) !important;
+  border-color: rgba(159, 168, 218, 0.34) !important;
+  border-left-color: #9fa8da !important;
 }
 
 [data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container {
   background: rgba(121, 134, 203, 0.18) !important;
+  border-color: rgba(159, 168, 218, 0.34) !important;
   border-left-color: #9fa8da !important;
 }
 
-[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__link {
-  color: #a5d6a7 !important;
-  background: rgba(76, 175, 80, 0.16) !important;
-  border-left-color: #66bb6a !important;
+[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link {
+  color: #c3ccff !important;
 }
 
-[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
-  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container {
-  background: rgba(38, 166, 154, 0.15) !important;
-  border-left-color: #4db6ac !important;
+[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__link {
+  color: #b6dfb9 !important;
+  background: rgba(76, 175, 80, 0.16) !important;
+  border-color: rgba(102, 187, 106, 0.34) !important;
+  border-left-color: #66bb6a !important;
 }
 
 [data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
   > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container > .md-nav__link {
   color: #80cbc4 !important;
-}
-
-[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
-  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container {
-  background: rgba(251, 140, 0, 0.16) !important;
-  border-left-color: #ff9800 !important;
 }
 
 [data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)

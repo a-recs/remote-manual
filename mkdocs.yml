@@ -11,6 +11,11 @@ nav:
       - 3. 教材を準備・配布する: metamoji/03-material.md
       - 4. レイヤーを理解する: metamoji/04-layer.md
       - 5. 授業中の基本操作: metamoji/05-operation.md
+      - 管理者編:
+          - 概要: metamoji/admin/index.md
+          - 1. 初回導入・初期設定: metamoji/admin/01-initial-setup.md
+          - 2. 年度更新: metamoji/admin/02-annual-renewal.md
+          - 3. 年度途中の変更: metamoji/admin/03-midyear-management.md
   - Neat Pulse: neat-pulse/index.md
 
 theme:

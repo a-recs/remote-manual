@@ -15,10 +15,11 @@ nav:
           - 5. 授業中の基本操作: metamoji/05-operation.md
       - 管理者編:
           - metamoji/admin/index.md
-          - 0. 必要な管理メニュー: metamoji/admin/00-menu-guide.md
-          - 1. 新しい受信校で授業を始める: metamoji/admin/01-initial-setup.md
-          - 2. 年度更新: metamoji/admin/02-annual-renewal.md
-          - 3. 年度途中で追加・変更: metamoji/admin/03-midyear-management.md
+          - 1. 生徒を登録する: metamoji/admin/01-student-registration.md
+          - 2. クラスを作成する: metamoji/admin/02-class-create.md
+          - 3. クラスに所属させる: metamoji/admin/03-class-members.md
+          - 4. QRコードを出力・送付する: metamoji/admin/04-qr.md
+          - 5. 年度更新: metamoji/admin/02-annual-renewal.md
   - Neat Pulse: neat-pulse/index.md
 
 theme:

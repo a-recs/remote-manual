@@ -4,6 +4,8 @@
 
 MetaMoJi ClassRoomには多くの機能がありますが、本マニュアルでは日常的な遠隔授業で使用する操作を中心に説明します。
 
+[MetaMoJi ClassRoom 3 ログイン画面を開く](https://classroom.metamoji.com/cr/){ .md-button .md-button--primary target="_blank" }
+
 ## 授業までの基本的な流れ
 
 1. MetaMoJi ClassRoomにログインする

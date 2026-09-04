@@ -26,3 +26,11 @@ MetaMoJi ClassRoomには多くの機能がありますが、本マニュアル�
 - レイヤー
 - 授業中の基本操作
 - モニタリング
+
+---
+
+## 管理者の方へ
+
+年度・学校・ユーザー・クラスの登録や年度更新については、**管理者編**にまとめています。
+
+[MetaMoJi ClassRoom 管理者編を開く](admin/index.md){ .md-button target="_self" }

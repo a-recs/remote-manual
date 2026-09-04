@@ -16,19 +16,65 @@
   letter-spacing: 0.01em;
 }
 
-/* 入口4項目 共通 */
+/* ホーム・端末確認は単独リンクなので、そのまま1つのボタンにする */
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container > .md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link,
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link {
   margin: 0.18rem 0 0.3rem !important;
-  padding: 0.42rem 0.55rem !important;
+  padding: 0.48rem 0.68rem !important;
   border-left: 0.24rem solid transparent !important;
-  border-radius: 0.34rem !important;
+  border-radius: 0.42rem !important;
   font-weight: 800 !important;
-  line-height: 1.45 !important;
+  line-height: 1.4 !important;
+}
+
+/* 操作編・管理者編：文字＋矢印を包むコンテナ全体を1つのボタンにする */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container {
+  display: flex !important;
+  align-items: center !important;
+  margin: 0.18rem 0 0.3rem !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  border-left: 0.24rem solid transparent !important;
+  border-radius: 0.42rem !important;
+}
+
+/* コンテナ内部の文字と矢印には個別の背景・枠を付けない */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container > .md-nav__link,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link {
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  font-weight: 800 !important;
+}
+
+/* タイトル側は残り幅を使う */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container > .md-nav__link:first-child,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link:first-child {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  padding: 0.48rem 0.68rem !important;
+}
+
+/* 矢印側は細く、中央寄せ */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container > .md-nav__link:last-child,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link:last-child {
+  flex: 0 0 2.15rem !important;
+  width: 2.15rem !important;
+  min-width: 2.15rem !important;
+  padding: 0.48rem 0.42rem !important;
+  justify-content: center !important;
+  border-left: 1px solid rgba(127, 127, 127, 0.16) !important;
 }
 
 /* ホーム：青 */
@@ -39,31 +85,39 @@
 }
 
 /* 操作編：青緑 */
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container > .md-nav__link {
-  color: #087f8c !important;
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container {
   background-color: rgba(0, 150, 136, 0.10) !important;
   border-left-color: #009688 !important;
 }
 
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container > .md-nav__link {
+  color: #087f8c !important;
+}
+
 /* 管理者編：オレンジ */
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link {
-  color: #b85c00 !important;
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container {
   background-color: rgba(245, 124, 0, 0.11) !important;
   border-left-color: #f57c00 !important;
 }
 
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link {
+  color: #b85c00 !important;
+}
+
 /* 端末確認・遠隔操作：緑 */
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link {
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link {
   color: #2e7d32 !important;
   background-color: rgba(46, 125, 50, 0.10) !important;
   border-left-color: #43a047 !important;
 }
 
 /* 個別ページは通常表示。現在ページだけ文字を少し強調 */
-.md-nav--primary .md-nav__nav .md-nav__link--active,
-.md-nav--primary .md-nav__item .md-nav__item .md-nav__link--active {
+.md-nav--primary .md-nav__link--active {
   font-weight: 800 !important;
 }
 
@@ -72,17 +126,18 @@
   background-color: rgba(63, 81, 181, 0.18) !important;
 }
 
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link--active,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container > .md-nav__link--active {
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container:has(> .md-nav__link--active) {
   background-color: rgba(0, 150, 136, 0.18) !important;
 }
 
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__link--active,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link--active {
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container:has(> .md-nav__link--active) {
   background-color: rgba(245, 124, 0, 0.19) !important;
 }
 
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link--active {
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link--active {
   background-color: rgba(46, 125, 50, 0.18) !important;
 }
 
@@ -93,21 +148,30 @@
   border-left-color: #9fa8da !important;
 }
 
-[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link,
-[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container > .md-nav__link {
-  color: #80cbc4 !important;
+[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container {
   background-color: rgba(38, 166, 154, 0.16) !important;
   border-left-color: #4db6ac !important;
 }
 
-[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__link,
-[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link {
-  color: #ffba73 !important;
+[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container > .md-nav__link {
+  color: #80cbc4 !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container {
   background-color: rgba(251, 140, 0, 0.17) !important;
   border-left-color: #ff9800 !important;
 }
 
-[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link {
+[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link {
+  color: #ffba73 !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link {
   color: #a5d6a7 !important;
   background-color: rgba(76, 175, 80, 0.16) !important;
   border-left-color: #66bb6a !important;

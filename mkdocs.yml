@@ -52,3 +52,6 @@ extra_css:
   - stylesheets/extra.css
   - stylesheets/navigation.css
   - stylesheets/navigation-fixes.css
+
+extra_javascript:
+  - javascripts/navigation-fixes.js

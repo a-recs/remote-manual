@@ -11,58 +11,107 @@
 }
 
 /*
- * MetaMoJi 配下の「操作編」「管理者編」は同じ見た目に統一する。
- * 親の MetaMoJi ClassRoom より一段控えめなサブメニューとして表示。
+ * MetaMoJi 配下は次の順番になっている。
+ * 1: MetaMoJiトップページ（navigation.indexesで見出し上は隠れる）
+ * 2: 操作編
+ * 3: 管理者編
+ *
+ * 操作編と管理者編だけを、まったく同じ見た目に統一する。
  */
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
-  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container,
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container,
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
-  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container {
-  border-left-color: #009688 !important;
-  background: transparent !important;
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__container {
+  display: flex !important;
+  align-items: center !important;
+  margin: 0.12rem 0 0.14rem 0.55rem !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  border: 1px solid rgba(63, 81, 181, 0.18) !important;
+  border-left: 0.22rem solid #5c6bc0 !important;
+  border-radius: 0.42rem !important;
+  background: rgba(63, 81, 181, 0.05) !important;
+  box-shadow: none !important;
 }
 
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
-  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container > .md-nav__link,
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link,
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
-  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link {
-  color: #087f8c !important;
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__container > .md-nav__link {
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #4b61b2 !important;
+  font-weight: 800 !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link:first-child,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__container > .md-nav__link:first-child {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  padding: 0.38rem 0.52rem !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link:last-child,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__container > .md-nav__link:last-child {
+  flex: 0 0 1.8rem !important;
+  width: 1.8rem !important;
+  min-width: 1.8rem !important;
+  padding: 0.38rem 0.3rem !important;
+  justify-content: center !important;
+  border-left: 1px solid rgba(63, 81, 181, 0.12) !important;
 }
 
 /* ホバーも2つとも同じ */
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
-  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container:hover,
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container:hover,
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
-  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container:hover {
-  background: rgba(0, 150, 136, 0.07) !important;
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__container:hover {
+  background: rgba(63, 81, 181, 0.10) !important;
 }
 
-/* 開いている側は、色を変えず背景だけ少し付けて現在位置を示す */
+/* 開いている側も色は変えず、背景だけ少し濃くする */
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
-  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container:has(.md-nav__link--active),
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container:has(.md-nav__link--active),
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
-  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container:has(.md-nav__link--active) {
-  background: rgba(0, 150, 136, 0.10) !important;
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__container:has(.md-nav__link--active) {
+  background: rgba(63, 81, 181, 0.14) !important;
+  border-color: rgba(63, 81, 181, 0.24) !important;
 }
 
 /* ダークモードでも同じデザイン */
 [data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
-  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container,
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container,
 [data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
-  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container {
-  border-left-color: #4db6ac !important;
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__container {
+  background: rgba(121, 134, 203, 0.10) !important;
+  border-color: rgba(159, 168, 218, 0.22) !important;
+  border-left-color: #9fa8da !important;
 }
 
 [data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
-  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container > .md-nav__link,
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link,
 [data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
-  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link {
-  color: #80cbc4 !important;
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__container > .md-nav__link {
+  color: #c3ccff !important;
 }
 
 [data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
-  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container:has(.md-nav__link--active),
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container:hover,
 [data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
-  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container:has(.md-nav__link--active) {
-  background: rgba(38, 166, 154, 0.13) !important;
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__container:hover {
+  background: rgba(121, 134, 203, 0.18) !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container:has(.md-nav__link--active),
+[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__container:has(.md-nav__link--active) {
+  background: rgba(121, 134, 203, 0.22) !important;
 }

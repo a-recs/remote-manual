@@ -1,0 +1,68 @@
+/* 左ナビの仕上げ調整 */
+
+/*
+ * ホーム表示時、Material for MkDocs が現在ページの目次を開くための
+ * 「ホーム」ラベルを追加するため、ホームが2つに見える。
+ * 目次用ラベルだけを隠し、通常のホームリンクは残す。
+ */
+.md-nav--primary > .md-nav__list > .md-nav__item:first-child
+  > label.md-nav__link[for="__toc"] {
+  display: none !important;
+}
+
+/*
+ * MetaMoJi 配下の「操作編」「管理者編」は同じ見た目に統一する。
+ * 親の MetaMoJi ClassRoom より一段控えめなサブメニューとして表示。
+ */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container {
+  border-left-color: #009688 !important;
+  background: transparent !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container > .md-nav__link,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link {
+  color: #087f8c !important;
+}
+
+/* ホバーも2つとも同じ */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container:hover,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container:hover {
+  background: rgba(0, 150, 136, 0.07) !important;
+}
+
+/* 開いている側は、色を変えず背景だけ少し付けて現在位置を示す */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container:has(.md-nav__link--active),
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container:has(.md-nav__link--active) {
+  background: rgba(0, 150, 136, 0.10) !important;
+}
+
+/* ダークモードでも同じデザイン */
+[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container,
+[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container {
+  border-left-color: #4db6ac !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container > .md-nav__link,
+[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link {
+  color: #80cbc4 !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__container:has(.md-nav__link--active),
+[data-md-color-scheme="slate"] .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container:has(.md-nav__link--active) {
+  background: rgba(38, 166, 154, 0.13) !important;
+}

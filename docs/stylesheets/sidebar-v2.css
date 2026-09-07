@@ -1,0 +1,208 @@
+/* A-RECS 左ナビゲーション v2
+   旧ナビの継ぎ足しをやめ、MkDocs Material の標準DOMだけを使う。
+   方針：トップ3項目は明確な入口、MetaMoJi配下は普通の子メニュー。 */
+
+/* ========================================
+   0. Material が現在ページ用に追加する左側の目次ラベルを隠す
+   （ホーム / Neat Pulse が二重に見える問題を防ぐ）
+======================================== */
+.md-nav--primary label.md-nav__link[for="__toc"] {
+  display: none !important;
+}
+
+/* ========================================
+   1. トップレベル共通
+   ホーム / MetaMoJi ClassRoom / Neat Pulse
+======================================== */
+.md-nav--primary > .md-nav__list > .md-nav__item {
+  margin: 0.28rem 0 !important;
+}
+
+/* ホーム・Neat Pulse（単独リンク型） */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__link {
+  display: flex !important;
+  align-items: center !important;
+  min-height: 2.85rem !important;
+  margin: 0 !important;
+  padding: 0.64rem 0.72rem !important;
+  box-sizing: border-box !important;
+  border: 1px solid var(--md-default-fg-color--lightest) !important;
+  border-radius: 0.38rem !important;
+  background: transparent !important;
+  color: var(--md-default-fg-color) !important;
+  font-size: 0.88rem !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  box-shadow: none !important;
+}
+
+/* MetaMoJi ClassRoom（タイトル＋展開矢印型） */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container {
+  display: flex !important;
+  align-items: stretch !important;
+  min-height: 2.85rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+  border: 1px solid var(--md-default-fg-color--lightest) !important;
+  border-radius: 0.38rem !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link {
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  color: var(--md-default-fg-color) !important;
+  font-size: 0.88rem !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  box-shadow: none !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link:first-child {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  padding: 0.64rem 0.72rem !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container > .md-nav__link:last-child {
+  flex: 0 0 2.35rem !important;
+  width: 2.35rem !important;
+  min-width: 2.35rem !important;
+  padding: 0.64rem 0.45rem !important;
+  justify-content: center !important;
+  border-left: 1px solid var(--md-default-fg-color--lightest) !important;
+}
+
+/* ホバー */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link:hover,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__link:hover,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container:hover {
+  background: color-mix(in srgb, var(--md-default-fg-color) 4%, transparent) !important;
+}
+
+/* 選択中：色は増やさず、境界と背景だけで示す */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) > .md-nav__link--active,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__link--active {
+  border-color: color-mix(in srgb, var(--md-primary-fg-color) 45%, var(--md-default-fg-color--lightest)) !important;
+  background: color-mix(in srgb, var(--md-primary-fg-color) 8%, transparent) !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2):has(.md-nav__link--active) > .md-nav__container {
+  border-color: color-mix(in srgb, var(--md-primary-fg-color) 45%, var(--md-default-fg-color--lightest)) !important;
+  background: color-mix(in srgb, var(--md-primary-fg-color) 8%, transparent) !important;
+}
+
+/* ========================================
+   2. MetaMoJi配下
+   操作編 / 管理者編は同じ立ち位置・同じ見た目
+======================================== */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav {
+  margin-top: 0.18rem !important;
+}
+
+/* MetaMoJi直下の各セクションを完全に同じ体裁へリセット */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item > .md-nav__container,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link {
+  margin: 0 0 0 0.7rem !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item > .md-nav__container {
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* 操作編・管理者編の文字 */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item > .md-nav__container > .md-nav__link,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link {
+  min-height: 2rem !important;
+  box-sizing: border-box !important;
+  padding: 0.42rem 0.5rem !important;
+  color: var(--md-default-fg-color--light) !important;
+  font-size: 0.81rem !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item > .md-nav__container > .md-nav__link:first-child {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item > .md-nav__container > .md-nav__link:last-child {
+  flex: 0 0 1.75rem !important;
+  width: 1.75rem !important;
+  min-width: 1.75rem !important;
+  justify-content: center !important;
+}
+
+/* 同じガイド線で親子関係だけ示す */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list {
+  border-left: 1px solid var(--md-default-fg-color--lightest) !important;
+  margin-left: 0.72rem !important;
+  padding-left: 0 !important;
+}
+
+/* 選択中の操作編 / 管理者編：形は変えず、文字＋薄背景だけ */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:has(.md-nav__link--active)
+  > .md-nav__container,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link--active {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 6%, transparent) !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item:has(.md-nav__link--active)
+  > .md-nav__container > .md-nav__link,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item > .md-nav__link--active {
+  color: var(--md-default-fg-color) !important;
+  font-weight: 700 !important;
+}
+
+/* ========================================
+   3. 操作編 / 管理者編を開いた後の具体的ページ
+======================================== */
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item > .md-nav {
+  margin-left: 1.2rem !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item > .md-nav .md-nav__link {
+  font-size: 0.77rem !important;
+  line-height: 1.45 !important;
+}

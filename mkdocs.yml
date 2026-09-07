@@ -8,18 +8,18 @@ nav:
       - metamoji/index.md
       - 操作編:
           - metamoji/operation/index.md
-          - 1. ログイン・学校選択: metamoji/01-login.md
-          - 2. マイボックスとクラスボックス: metamoji/02-box.md
-          - 3. 教材を準備・配布する: metamoji/03-material.md
-          - 4. レイヤーを理解する: metamoji/04-layer.md
-          - 5. 授業中の基本操作: metamoji/05-operation.md
+          - ログイン・学校選択: metamoji/01-login.md
+          - マイボックスとクラスボックス: metamoji/02-box.md
+          - 教材準備・配布: metamoji/03-material.md
+          - レイヤー: metamoji/04-layer.md
+          - 授業中の基本操作: metamoji/05-operation.md
       - 管理者編:
           - metamoji/admin/index.md
-          - 1. 生徒を登録する: metamoji/admin/01-student-registration.md
-          - 2. クラスを作成する: metamoji/admin/02-class-create.md
-          - 3. クラスに所属させる: metamoji/admin/03-class-members.md
-          - 4. QRコードを出力・送付する: metamoji/admin/04-qr.md
-          - 5. 年度更新: metamoji/admin/02-annual-renewal.md
+          - 生徒登録: metamoji/admin/01-student-registration.md
+          - クラス作成: metamoji/admin/02-class-create.md
+          - クラス所属: metamoji/admin/03-class-members.md
+          - QRコード: metamoji/admin/04-qr.md
+          - 年度更新: metamoji/admin/02-annual-renewal.md
   - Neat Pulse: neat-pulse/index.md
 
 theme:

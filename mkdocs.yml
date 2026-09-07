@@ -50,7 +50,4 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
-  - stylesheets/sidebar.css
-
-extra_javascript:
-  - javascripts/sidebar.js
+  - stylesheets/sidebar-v2.css

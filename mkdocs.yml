@@ -50,8 +50,7 @@ markdown_extensions:
 
 extra_css:
   - stylesheets/extra.css
-  - stylesheets/navigation.css
-  - stylesheets/navigation-fixes.css
+  - stylesheets/sidebar.css
 
 extra_javascript:
-  - javascripts/navigation-fixes.js
+  - javascripts/sidebar.js

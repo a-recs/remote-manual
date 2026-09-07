@@ -233,3 +233,91 @@
 }
 
 .md-typeset blockquote { border-left-width: 0.2rem; }
+
+/* ==================================================
+   ダークモード専用：長時間読んでも疲れにくい配色
+   ライトモードには影響させない
+================================================== */
+[data-md-color-scheme="slate"] {
+  --arecs-dark-surface: #242933;
+  --arecs-dark-surface-hover: #2a303c;
+  --arecs-dark-border: rgba(255, 255, 255, 0.13);
+  --arecs-dark-text: #dde2ea;
+  --arecs-dark-heading: #f0f3f7;
+  --arecs-dark-muted: #b5bdc9;
+  --arecs-dark-link: #86a9ff;
+}
+
+/* 本文のコントラストを少し上げる */
+[data-md-color-scheme="slate"] .md-typeset {
+  color: var(--arecs-dark-text);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3,
+[data-md-color-scheme="slate"] .md-typeset h4 {
+  color: var(--arecs-dark-heading);
+}
+
+[data-md-color-scheme="slate"] .md-typeset p,
+[data-md-color-scheme="slate"] .md-typeset li {
+  color: var(--arecs-dark-text);
+}
+
+/* 通常リンクは鮮やかすぎない青にする */
+[data-md-color-scheme="slate"] .md-typeset a:not(.md-button):not(.manual-home-card) {
+  color: var(--arecs-dark-link);
+}
+
+/* ホーム・選択カードは背景より一段だけ明るくする */
+[data-md-color-scheme="slate"] .manual-home-card,
+[data-md-color-scheme="slate"] .operation-card {
+  background: var(--arecs-dark-surface);
+  border-color: var(--arecs-dark-border);
+  box-shadow: 0 0.12rem 0.4rem rgba(0, 0, 0, 0.22);
+}
+
+[data-md-color-scheme="slate"] .manual-home-card:hover {
+  background: var(--arecs-dark-surface-hover);
+  border-color: rgba(134, 169, 255, 0.55);
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.28);
+}
+
+[data-md-color-scheme="slate"] .manual-home-card strong,
+[data-md-color-scheme="slate"] .operation-card strong {
+  color: var(--arecs-dark-heading);
+}
+
+[data-md-color-scheme="slate"] .manual-home-card > span:last-child,
+[data-md-color-scheme="slate"] .operation-card span {
+  color: var(--arecs-dark-muted);
+}
+
+[data-md-color-scheme="slate"] .manual-home-card__eyebrow {
+  color: var(--arecs-dark-link);
+}
+
+/* 表も背景と一体化しすぎないようにする */
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) {
+  border-color: var(--arecs-dark-border);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background: var(--arecs-dark-surface-hover);
+  color: var(--arecs-dark-heading);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) td {
+  border-color: var(--arecs-dark-border);
+}
+
+/* 引用・区切り線も暗背景で見失わない程度に */
+[data-md-color-scheme="slate"] .md-typeset hr {
+  border-color: var(--arecs-dark-border);
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  color: var(--arecs-dark-muted);
+  border-left-color: rgba(134, 169, 255, 0.45);
+}

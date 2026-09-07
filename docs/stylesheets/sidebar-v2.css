@@ -136,16 +136,18 @@
   box-shadow: none !important;
 }
 
-/* タイトル文字の左位置を完全に統一 */
+/* タイトル文字の位置・大きさ・太さを統一 */
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
   > .md-nav > .md-nav__list > .md-nav__item > .md-nav__container > .md-nav__link:first-child,
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
-  > .md-nav > .md-nav__list > .md-nav__item > a.md-nav__link {
+  > .md-nav > .md-nav__list > .md-nav__item > a.md-nav__link,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2)
+  > .md-nav > .md-nav__list > .md-nav__item > label.md-nav__link {
   flex: 1 1 auto !important;
   min-width: 0 !important;
   min-height: 2rem !important;
   margin: 0 !important;
-  padding: 0.42rem 0.58rem !important;
+  padding: 0.42rem 0 0.42rem 0 !important;
   box-sizing: border-box !important;
   color: var(--md-default-fg-color--light) !important;
   font-size: 0.81rem !important;

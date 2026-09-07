@@ -1,90 +1,84 @@
-/* 左ナビの仕上げ調整：JavaScriptで付与したクラスを使って確実に整える */
+/* 左ナビの仕上げ調整：JavaScriptで付与したクラスを使って整える */
 
-/* 現在ページ用の重複ラベルは非表示 */
-.arecs-duplicate-current-label {
+/* Home / Neat Pulse で現在ページ用に重複した項目を非表示 */
+.arecs-duplicate-nav-item {
   display: none !important;
 }
 
-/* MetaMoJi 配下の「操作編」「管理者編」を同じ階層・同じ見た目にする */
+/*
+ * MetaMoJi配下の「操作編」「管理者編」はボタン化しない。
+ * 同じ階層・同じ文字サイズ・同じ余白だけそろえる。
+ */
 .arecs-submenu-item {
-  margin-left: 0.55rem !important;
+  margin: 0 !important;
 }
 
-.arecs-submenu-button {
+.arecs-submenu-item > .md-nav__container {
   display: flex !important;
   align-items: center !important;
-  min-height: 2.15rem !important;
-  margin: 0.12rem 0 0.14rem 0 !important;
-  padding: 0 !important;
-  overflow: hidden !important;
-  border: 1px solid rgba(0, 150, 136, 0.22) !important;
-  border-left: 0.22rem solid #009688 !important;
-  border-radius: 0.42rem !important;
-  background: rgba(0, 150, 136, 0.06) !important;
-  box-shadow: none !important;
-  color: #087f8c !important;
-}
-
-/* container 型のメニュー */
-.arecs-submenu-button > .md-nav__link {
   margin: 0 !important;
+  padding: 0 !important;
   border: 0 !important;
   border-radius: 0 !important;
   background: transparent !important;
   box-shadow: none !important;
-  color: #087f8c !important;
-  font-weight: 800 !important;
 }
 
-.arecs-submenu-button > .md-nav__link:first-child {
+.arecs-submenu-item > .md-nav__link,
+.arecs-submenu-item > .md-nav__container > .md-nav__link {
+  margin: 0 !important;
+  padding-top: 0.28rem !important;
+  padding-bottom: 0.28rem !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: var(--md-default-fg-color--light) !important;
+  font-size: 0.72rem !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+}
+
+/* 文字側は同じ位置にそろえる */
+.arecs-submenu-item > .md-nav__link:first-child,
+.arecs-submenu-item > .md-nav__container > .md-nav__link:first-child {
   flex: 1 1 auto !important;
   min-width: 0 !important;
-  padding: 0.38rem 0.52rem !important;
+  padding-left: 0.65rem !important;
 }
 
-.arecs-submenu-button > .md-nav__link:last-child {
+/* 右矢印も同じ位置にそろえる */
+.arecs-submenu-item > .md-nav__container > .md-nav__link:last-child {
   flex: 0 0 1.8rem !important;
   width: 1.8rem !important;
   min-width: 1.8rem !important;
-  padding: 0.38rem 0.3rem !important;
+  padding-left: 0.3rem !important;
+  padding-right: 0.3rem !important;
   justify-content: center !important;
-  border-left: 1px solid rgba(0, 150, 136, 0.14) !important;
 }
 
-/* link / label 自体がボタンになる場合 */
-.md-nav__link.arecs-submenu-button {
-  padding: 0.38rem 0.52rem !important;
+/* ホバー時もボタン化せず、文字色だけ少し強める */
+.arecs-submenu-item:hover > .md-nav__link,
+.arecs-submenu-item:hover > .md-nav__container > .md-nav__link {
+  color: var(--md-accent-fg-color) !important;
+  background: transparent !important;
+}
+
+/* 現在開いている側だけ文字を少し強調 */
+.arecs-submenu-item:has(.md-nav__link--active) > .md-nav__link,
+.arecs-submenu-item:has(.md-nav__link--active) > .md-nav__container > .md-nav__link {
+  color: var(--md-primary-fg-color) !important;
   font-weight: 800 !important;
+  background: transparent !important;
 }
 
-.arecs-submenu-button:hover {
-  background: rgba(0, 150, 136, 0.10) !important;
+/* ダークモードでも同じシンプル表示 */
+[data-md-color-scheme="slate"] .arecs-submenu-item > .md-nav__link,
+[data-md-color-scheme="slate"] .arecs-submenu-item > .md-nav__container > .md-nav__link {
+  color: var(--md-default-fg-color--light) !important;
 }
 
-.arecs-submenu-item:has(.md-nav__link--active) > .arecs-submenu-button,
-.arecs-submenu-item:has(.md-nav__link--active) > .md-nav__container.arecs-submenu-button {
-  background: rgba(0, 150, 136, 0.13) !important;
-  border-color: rgba(0, 150, 136, 0.30) !important;
-}
-
-/* ダークモード */
-[data-md-color-scheme="slate"] .arecs-submenu-button {
-  border-color: rgba(77, 182, 172, 0.26) !important;
-  border-left-color: #4db6ac !important;
-  background: rgba(38, 166, 154, 0.09) !important;
-  color: #80cbc4 !important;
-}
-
-[data-md-color-scheme="slate"] .arecs-submenu-button > .md-nav__link,
-[data-md-color-scheme="slate"] .md-nav__link.arecs-submenu-button {
-  color: #80cbc4 !important;
-}
-
-[data-md-color-scheme="slate"] .arecs-submenu-button:hover {
-  background: rgba(38, 166, 154, 0.15) !important;
-}
-
-[data-md-color-scheme="slate"] .arecs-submenu-item:has(.md-nav__link--active) > .arecs-submenu-button,
-[data-md-color-scheme="slate"] .arecs-submenu-item:has(.md-nav__link--active) > .md-nav__container.arecs-submenu-button {
-  background: rgba(38, 166, 154, 0.19) !important;
+[data-md-color-scheme="slate"] .arecs-submenu-item:hover > .md-nav__link,
+[data-md-color-scheme="slate"] .arecs-submenu-item:hover > .md-nav__container > .md-nav__link {
+  color: var(--md-accent-fg-color) !important;
 }

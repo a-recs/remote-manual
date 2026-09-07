@@ -7,7 +7,7 @@ nav:
   - MetaMoJi ClassRoom:
       - metamoji/index.md
       - 操作編:
-          - metamoji/operation.md
+          - metamoji/operation/index.md
           - 1. ログイン・学校選択: metamoji/01-login.md
           - 2. マイボックスとクラスボックス: metamoji/02-box.md
           - 3. 教材を準備・配布する: metamoji/03-material.md

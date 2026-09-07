@@ -1,0 +1,169 @@
+/* A-RECS 左ナビゲーション
+   使いやすさ優先のシンプル構成。
+   JS が意味クラスを付け、CSS は見た目だけを担当する。 */
+
+/* ------------------------------
+   共通
+------------------------------ */
+.md-nav--primary .arecs-hidden {
+  display: none !important;
+}
+
+.md-nav--primary .arecs-top-item {
+  margin: 0.32rem 0 !important;
+}
+
+/* ------------------------------
+   トップレベル
+   ホーム / MetaMoJi ClassRoom / Neat Pulse
+------------------------------ */
+.md-nav--primary .arecs-top-control,
+.md-nav--primary .arecs-top-container {
+  min-height: 2.8rem !important;
+  box-sizing: border-box !important;
+  border: 1px solid var(--md-default-fg-color--lightest) !important;
+  border-radius: 0.42rem !important;
+  background: var(--md-default-bg-color) !important;
+  box-shadow: none !important;
+}
+
+.md-nav--primary .arecs-top-control {
+  display: flex !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 0.62rem 0.72rem !important;
+  color: var(--md-default-fg-color) !important;
+  font-size: 0.9rem !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+}
+
+/* MetaMoJi は container 内にタイトルと矢印が入る */
+.md-nav--primary .arecs-top-container {
+  display: flex !important;
+  align-items: stretch !important;
+  overflow: hidden !important;
+}
+
+.md-nav--primary .arecs-top-container > .md-nav__link {
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: var(--md-default-fg-color) !important;
+  font-size: 0.9rem !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+}
+
+.md-nav--primary .arecs-top-container > .md-nav__link:first-child {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  padding: 0.62rem 0.72rem !important;
+}
+
+.md-nav--primary .arecs-top-container > .md-nav__link:last-child {
+  flex: 0 0 2.35rem !important;
+  width: 2.35rem !important;
+  min-width: 2.35rem !important;
+  padding: 0.62rem 0.48rem !important;
+  justify-content: center !important;
+  border-left: 1px solid var(--md-default-fg-color--lightest) !important;
+}
+
+.md-nav--primary .arecs-top-control:hover,
+.md-nav--primary .arecs-top-container:hover {
+  background: color-mix(in srgb, var(--md-default-fg-color) 5%, var(--md-default-bg-color)) !important;
+}
+
+/* 現在位置だけ少し強調 */
+.md-nav--primary .arecs-top-item.arecs-current > .arecs-top-control,
+.md-nav--primary .arecs-top-item.arecs-current > .arecs-top-container,
+.md-nav--primary .arecs-top-item.arecs-contains-current > .arecs-top-container {
+  border-color: color-mix(in srgb, var(--md-primary-fg-color) 38%, var(--md-default-fg-color--lightest)) !important;
+  background: color-mix(in srgb, var(--md-primary-fg-color) 9%, var(--md-default-bg-color)) !important;
+}
+
+/* ------------------------------
+   MetaMoJi の子階層
+   操作編 / 管理者編
+------------------------------ */
+.md-nav--primary .arecs-child-group {
+  margin: 0.05rem 0 0.05rem 0.75rem !important;
+  border-left: 1px solid var(--md-default-fg-color--lightest) !important;
+}
+
+/* 子階層は「ボタン」にしない */
+.md-nav--primary .arecs-child-group > .md-nav__container,
+.md-nav--primary .arecs-child-group > .md-nav__link {
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.md-nav--primary .arecs-child-group > .md-nav__container {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.md-nav--primary .arecs-child-group > .md-nav__container > .md-nav__link,
+.md-nav--primary .arecs-child-group > .md-nav__link {
+  min-height: 2rem !important;
+  box-sizing: border-box !important;
+  padding: 0.42rem 0.55rem !important;
+  color: var(--md-default-fg-color--light) !important;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+  line-height: 1.35 !important;
+}
+
+.md-nav--primary .arecs-child-group > .md-nav__container > .md-nav__link:first-child {
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+}
+
+.md-nav--primary .arecs-child-group > .md-nav__container > .md-nav__link:last-child {
+  flex: 0 0 1.8rem !important;
+  width: 1.8rem !important;
+  min-width: 1.8rem !important;
+  justify-content: center !important;
+}
+
+.md-nav--primary .arecs-child-group:hover > .md-nav__container,
+.md-nav--primary .arecs-child-group:hover > .md-nav__link {
+  background: color-mix(in srgb, var(--md-default-fg-color) 4%, transparent) !important;
+}
+
+/* 操作編と管理者編は同じ見た目。現在側だけ位置を示す */
+.md-nav--primary .arecs-child-group.arecs-current-section {
+  border-left-color: var(--md-primary-fg-color) !important;
+}
+
+.md-nav--primary .arecs-child-group.arecs-current-section > .md-nav__container,
+.md-nav--primary .arecs-child-group.arecs-current-section > .md-nav__link {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 7%, transparent) !important;
+}
+
+.md-nav--primary .arecs-child-group.arecs-current-section > .md-nav__container > .md-nav__link,
+.md-nav--primary .arecs-child-group.arecs-current-section > .md-nav__link {
+  color: var(--md-default-fg-color) !important;
+  font-weight: 700 !important;
+}
+
+/* ------------------------------
+   その下の具体的ページ
+------------------------------ */
+.md-nav--primary .arecs-child-group > .md-nav {
+  margin-left: 0.35rem !important;
+}
+
+.md-nav--primary .arecs-child-group > .md-nav .md-nav__link {
+  font-size: 0.78rem !important;
+  line-height: 1.45 !important;
+}
+
+/* ダークモードは Material の変数に任せるので追加色指定は最小限 */

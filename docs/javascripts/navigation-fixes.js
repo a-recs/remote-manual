@@ -1,46 +1,78 @@
 (() => {
   const normalize = (text) => (text || "").replace(/\s+/g, " ").trim();
 
+  function directTitle(item) {
+    const candidates = item.querySelectorAll(
+      ":scope > .md-nav__link, :scope > .md-nav__container > .md-nav__link"
+    );
+    for (const node of candidates) {
+      const text = normalize(node.textContent);
+      if (text) return text;
+    }
+    return "";
+  }
+
   function applyNavigationFixes() {
     const nav = document.querySelector(".md-nav--primary");
     if (!nav) return;
 
-    // 現在ページの目次用ラベルと通常リンクが重複している場合、ラベル側だけ隠す。
-    nav.querySelectorAll('label.md-nav__link[for="__toc"]').forEach((label) => {
-      const item = label.closest(".md-nav__item");
-      if (!item) return;
+    // いったん付与済みの補助クラスを整理してから再判定する。
+    nav.querySelectorAll(".arecs-submenu-item").forEach((item) => {
+      item.classList.remove("arecs-submenu-item");
+    });
+    nav.querySelectorAll(".arecs-duplicate-nav-item").forEach((item) => {
+      item.classList.remove("arecs-duplicate-nav-item");
+    });
 
-      const labelText = normalize(label.textContent);
-      const anchors = Array.from(item.querySelectorAll("a.md-nav__link"));
-      const sameTextAnchor = anchors.some((anchor) => normalize(anchor.textContent) === labelText);
-
-      if (sameTextAnchor) {
-        label.classList.add("arecs-duplicate-current-label");
+    // MetaMoJi配下の「操作編」「管理者編」を、DOM上の位置に依存せず同じ階層として扱う。
+    nav.querySelectorAll(".md-nav__item").forEach((item) => {
+      const title = directTitle(item);
+      if (title === "操作編" || title === "管理者編") {
+        item.classList.add("arecs-submenu-item");
       }
     });
 
-    // 「操作編」「管理者編」をDOM上の位置に依存せず、名前で同じサブメニューとして扱う。
-    nav.querySelectorAll(".md-nav__link").forEach((link) => {
-      const text = normalize(link.textContent);
-      if (text !== "操作編" && text !== "管理者編") return;
+    // トップレベルに同名項目が2つ出た場合、目次用ラベル側を隠す。
+    // Home / Neat Pulse の現在ページ表示で発生する重複対策。
+    const topList = nav.querySelector(":scope > .md-nav__list");
+    if (!topList) return;
 
-      const item = link.closest(".md-nav__item");
-      if (!item) return;
+    const topItems = Array.from(topList.querySelectorAll(":scope > .md-nav__item"));
+    const groups = new Map();
 
-      item.classList.add("arecs-submenu-item");
+    topItems.forEach((item) => {
+      const title = directTitle(item);
+      if (!title) return;
+      if (!groups.has(title)) groups.set(title, []);
+      groups.get(title).push(item);
+    });
 
-      const container = item.querySelector(":scope > .md-nav__container");
-      if (container) {
-        container.classList.add("arecs-submenu-button");
-      } else {
-        link.classList.add("arecs-submenu-button");
-      }
+    groups.forEach((items, title) => {
+      if (items.length < 2) return;
+      if (title !== "ホーム" && title !== "Neat Pulse") return;
+
+      // 通常のaリンクを持つナビ項目を優先して1つ残す。
+      let keep = items.find((item) => {
+        const directAnchor = item.querySelector(
+          ":scope > a.md-nav__link, :scope > .md-nav__container > a.md-nav__link"
+        );
+        const tocLabel = item.querySelector(
+          ":scope > label.md-nav__link[for=\"__toc\"], :scope > .md-nav__container > label.md-nav__link[for=\"__toc\"]"
+        );
+        return directAnchor && !tocLabel;
+      });
+
+      if (!keep) keep = items[0];
+
+      items.forEach((item) => {
+        if (item !== keep) item.classList.add("arecs-duplicate-nav-item");
+      });
     });
   }
 
   document.addEventListener("DOMContentLoaded", applyNavigationFixes);
 
-  // Material側でナビが差し替わった場合にも再適用する。
+  // Material for MkDocs がページ遷移時にナビを書き換えた場合にも再適用する。
   const observer = new MutationObserver(() => applyNavigationFixes());
   observer.observe(document.documentElement, { childList: true, subtree: true });
 

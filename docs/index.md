@@ -14,6 +14,12 @@
     <strong>Neat Pulse</strong>
     <span>受信校のNeat端末の状態確認と遠隔操作を行います。</span>
   </a>
+
+  <a class="manual-home-card" href="atem-mini-pro/">
+    <span class="manual-home-card__eyebrow">配信映像を切り替える</span>
+    <strong>ATEM Mini Pro</strong>
+    <span>遠隔授業で使用する映像の切り替えと合成の基本操作を確認します。</span>
+  </a>
 </div>
 
 ## このマニュアルの見方
@@ -24,6 +30,7 @@
   - **操作編**：授業を行う先生が使う基本操作
   - **管理者編**：生徒登録、クラス作成、クラス所属、QRコード、年度更新
 - **Neat Pulse**：受信校端末の状態確認・遠隔操作
+- **ATEM Mini Pro**：配信映像の切り替え・合成の基本操作
 
 各ページは、**実際の作業順に確認できること**を基本に構成します。
 

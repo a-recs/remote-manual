@@ -21,6 +21,7 @@ nav:
           - QRコード: metamoji/admin/04-qr.md
           - 年度更新: metamoji/admin/02-annual-renewal.md
   - Neat Pulse: neat-pulse/index.md
+  - ATEM Mini Pro: atem-mini-pro/index.md
 
 theme:
   name: material

@@ -23,6 +23,7 @@ nav:
           - 年度更新: metamoji/admin/02-annual-renewal.md
   - Neat Pulse: neat-pulse/index.md
   - ATEM Mini Pro: atem-mini-pro/index.md
+  - Zoom: zoom/index.md
 
 theme:
   name: material

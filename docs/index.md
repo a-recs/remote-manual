@@ -20,6 +20,12 @@
     <strong>ATEM Mini Pro</strong>
     <span>遠隔授業で使用する映像の切り替えと合成の基本操作を確認します。</span>
   </a>
+
+  <a class="manual-home-card" href="zoom/">
+    <span class="manual-home-card__eyebrow">授業用ミーティングを準備する</span>
+    <strong>Zoom</strong>
+    <span>ミーティング作成、受信校のビュー設定、授業開始前の画面確認を行います。</span>
+  </a>
 </div>
 
 ## このマニュアルの見方
@@ -31,6 +37,7 @@
   - **管理者編**：生徒登録、クラス作成、クラス所属、QRコード、年度更新
 - **Neat Pulse**：受信校端末の状態確認・遠隔操作
 - **ATEM Mini Pro**：配信映像の切り替え・合成の基本操作
+- **Zoom**：ミーティング作成、受信校のビュー設定、授業開始前の画面確認
 
 各ページは、**実際の作業順に確認できること**を基本に構成します。
 

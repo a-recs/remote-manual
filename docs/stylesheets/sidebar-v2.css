@@ -1,28 +1,30 @@
 /* A-RECS 左ナビゲーション
-   方針：トップ4項目は入口として明確に、MetaMoJi配下は同じ階層の子メニューとして表示する。 */
+   方針：トップ5項目は入口として明確に、MetaMoJi配下は同じ階層の子メニューとして表示する。 */
 
 /* ==================================================
    0. 現在ページ用にMaterialが追加する重複ラベルを隠す
-   ホーム／Neat Pulse／ATEM Mini Proの二重表示対策
+   ホーム／Neat Pulse／ATEM Mini Pro／Zoomの二重表示対策
 ================================================== */
 .md-nav--primary > .md-nav__list > .md-nav__item:first-child label.md-nav__link,
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) label.md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(4) label.md-nav__link {
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(4) label.md-nav__link,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(5) label.md-nav__link {
   display: none !important;
 }
 
 /* ==================================================
    1. トップレベル
-   ホーム / MetaMoJi ClassRoom / Neat Pulse / ATEM Mini Pro
+   ホーム / MetaMoJi ClassRoom / Neat Pulse / ATEM Mini Pro / Zoom
 ================================================== */
 .md-nav--primary > .md-nav__list > .md-nav__item {
   margin: 0.28rem 0 !important;
 }
 
-/* ホーム・Neat Pulse・ATEM Mini Pro */
+/* ホーム・Neat Pulse・ATEM Mini Pro・Zoom */
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) > a.md-nav__link,
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > a.md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(4) > a.md-nav__link {
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(4) > a.md-nav__link,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(5) > a.md-nav__link {
   display: flex !important;
   align-items: center !important;
   min-height: 2.85rem !important;
@@ -85,6 +87,7 @@
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) > a.md-nav__link:hover,
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > a.md-nav__link:hover,
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(4) > a.md-nav__link:hover,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(5) > a.md-nav__link:hover,
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > .md-nav__container:hover {
   background: color-mix(in srgb, var(--md-default-fg-color) 4%, transparent) !important;
 }
@@ -92,7 +95,8 @@
 /* 選択中 */
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) > a.md-nav__link--active,
 .md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > a.md-nav__link--active,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(4) > a.md-nav__link--active {
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(4) > a.md-nav__link--active,
+.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(5) > a.md-nav__link--active {
   border-color: color-mix(in srgb, var(--md-primary-fg-color) 45%, var(--md-default-fg-color--lightest)) !important;
   background: color-mix(in srgb, var(--md-primary-fg-color) 8%, transparent) !important;
 }

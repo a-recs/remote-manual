@@ -1,15 +1,10 @@
 /* A-RECS 左ナビゲーション
-   方針：ホームの並びと左メニューをそろえ、主要項目を同じ体裁で表示する。 */
+   方針：トップ項目は同じ体裁で表示し、並び順を変更しても崩れないようにする。 */
 
 /* ==================================================
    0. 現在ページ用にMaterialが追加する重複ラベルを隠す
-   ホーム／授業配信の流れ／Zoom／Neat Pulse／ATEM Mini Pro
 ================================================== */
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) label.md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) label.md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(4) label.md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(5) label.md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(6) label.md-nav__link {
+.md-nav--primary > .md-nav__list > .md-nav__item > label.md-nav__link {
   display: none !important;
 }
 
@@ -22,11 +17,7 @@
 }
 
 /* 子メニューを持たないトップ項目 */
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) > a.md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > a.md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(4) > a.md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(5) > a.md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(6) > a.md-nav__link {
+.md-nav--primary > .md-nav__list > .md-nav__item > a.md-nav__link {
   display: flex !important;
   align-items: center !important;
   min-height: 2.85rem !important;
@@ -43,8 +34,8 @@
   box-shadow: none !important;
 }
 
-/* MetaMoJi ClassRoom */
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__container {
+/* 子メニューを持つトップ項目（現在はMetaMoJi） */
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container {
   display: flex !important;
   align-items: stretch !important;
   min-height: 2.85rem !important;
@@ -58,7 +49,7 @@
   box-shadow: none !important;
 }
 
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__container > .md-nav__link {
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container > .md-nav__link {
   margin: 0 !important;
   border: 0 !important;
   border-radius: 0 !important;
@@ -70,13 +61,13 @@
   box-shadow: none !important;
 }
 
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__container > .md-nav__link:first-child {
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container > .md-nav__link:first-child {
   flex: 1 1 auto !important;
   min-width: 0 !important;
   padding: 0.64rem 0.72rem !important;
 }
 
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__container > .md-nav__link:last-child {
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container > .md-nav__link:last-child {
   flex: 0 0 2.35rem !important;
   width: 2.35rem !important;
   min-width: 2.35rem !important;
@@ -86,46 +77,33 @@
 }
 
 /* ホバー */
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) > a.md-nav__link:hover,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > a.md-nav__link:hover,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(4) > a.md-nav__link:hover,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(5) > a.md-nav__link:hover,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(6) > a.md-nav__link:hover,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav__container:hover {
+.md-nav--primary > .md-nav__list > .md-nav__item > a.md-nav__link:hover,
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container:hover {
   background: color-mix(in srgb, var(--md-default-fg-color) 4%, transparent) !important;
 }
 
 /* 選択中 */
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(1) > a.md-nav__link--active,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(2) > a.md-nav__link--active,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(4) > a.md-nav__link--active,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(5) > a.md-nav__link--active,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(6) > a.md-nav__link--active {
-  border-color: color-mix(in srgb, var(--md-primary-fg-color) 45%, var(--md-default-fg-color--lightest)) !important;
-  background: color-mix(in srgb, var(--md-primary-fg-color) 8%, transparent) !important;
-}
-
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3):has(.md-nav__link--active) > .md-nav__container {
+.md-nav--primary > .md-nav__list > .md-nav__item > a.md-nav__link--active,
+.md-nav--primary > .md-nav__list > .md-nav__item:has(.md-nav__link--active) > .md-nav__container {
   border-color: color-mix(in srgb, var(--md-primary-fg-color) 45%, var(--md-default-fg-color--lightest)) !important;
   background: color-mix(in srgb, var(--md-primary-fg-color) 8%, transparent) !important;
 }
 
 /* ==================================================
-   2. MetaMoJi配下
-   操作編 / 管理者編を同じ位置・同じ体裁にする
+   2. トップ項目配下
+   操作編 / 管理者編などを同じ位置・同じ体裁にする
 ================================================== */
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3) > .md-nav {
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav {
   margin-top: 0.16rem !important;
 }
 
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3)
-  > .md-nav > .md-nav__list {
+.md-nav--primary > .md-nav__list > .md-nav__item > .md-nav > .md-nav__list {
   margin-left: 0.72rem !important;
   padding-left: 0 !important;
   border-left: 1px solid var(--md-default-fg-color--lightest) !important;
 }
 
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3)
+.md-nav--primary > .md-nav__list > .md-nav__item
   > .md-nav > .md-nav__list > .md-nav__item {
   margin: 0 !important;
   padding: 0 !important;
@@ -135,7 +113,7 @@
   box-shadow: none !important;
 }
 
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3)
+.md-nav--primary > .md-nav__list > .md-nav__item
   > .md-nav > .md-nav__list > .md-nav__item > .md-nav__container {
   display: flex !important;
   align-items: center !important;
@@ -147,17 +125,17 @@
   box-shadow: none !important;
 }
 
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3)
+.md-nav--primary > .md-nav__list > .md-nav__item
   > .md-nav > .md-nav__list > .md-nav__item > .md-nav__container > .md-nav__link:first-child,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3)
+.md-nav--primary > .md-nav__list > .md-nav__item
   > .md-nav > .md-nav__list > .md-nav__item > a.md-nav__link,
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3)
+.md-nav--primary > .md-nav__list > .md-nav__item
   > .md-nav > .md-nav__list > .md-nav__item > label.md-nav__link {
   flex: 1 1 auto !important;
   min-width: 0 !important;
   min-height: 2rem !important;
   margin: 0 !important;
-  padding: 0.42rem 0 0.42rem 0 !important;
+  padding: 0.42rem 0 !important;
   box-sizing: border-box !important;
   color: var(--md-default-fg-color--light) !important;
   font-size: 0.81rem !important;
@@ -170,7 +148,7 @@
   box-shadow: none !important;
 }
 
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3)
+.md-nav--primary > .md-nav__list > .md-nav__item
   > .md-nav > .md-nav__list > .md-nav__item > .md-nav__container > .md-nav__link:last-child {
   flex: 0 0 1.75rem !important;
   width: 1.75rem !important;
@@ -182,13 +160,13 @@
   background: transparent !important;
 }
 
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3)
+.md-nav--primary > .md-nav__list > .md-nav__item
   > .md-nav > .md-nav__list > .md-nav__item:has(.md-nav__link--active)
   > .md-nav__container {
   background: color-mix(in srgb, var(--md-primary-fg-color) 6%, transparent) !important;
 }
 
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3)
+.md-nav--primary > .md-nav__list > .md-nav__item
   > .md-nav > .md-nav__list > .md-nav__item:has(.md-nav__link--active)
   > .md-nav__container > .md-nav__link {
   color: var(--md-default-fg-color) !important;
@@ -196,14 +174,14 @@
 }
 
 /* ==================================================
-   3. 操作編 / 管理者編の具体的ページ
+   3. 具体的ページ
 ================================================== */
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3)
+.md-nav--primary > .md-nav__list > .md-nav__item
   > .md-nav > .md-nav__list > .md-nav__item > .md-nav {
   margin-left: 1.15rem !important;
 }
 
-.md-nav--primary > .md-nav__list > .md-nav__item:nth-child(3)
+.md-nav--primary > .md-nav__list > .md-nav__item
   > .md-nav > .md-nav__list > .md-nav__item > .md-nav .md-nav__link {
   font-size: 0.77rem !important;
   line-height: 1.45 !important;

@@ -3,6 +3,12 @@
 遠隔授業の準備・配信・運営に必要な操作を、**必要なときにすぐ確認できる**ようにまとめたWebマニュアルです。
 
 <div class="manual-home-grid">
+  <a class="manual-home-card" href="lesson-flow/">
+    <span class="manual-home-card__eyebrow">授業当日の流れを確認する</span>
+    <strong>授業配信の流れ</strong>
+    <span>授業前・授業中・授業終了までに行う操作を、順番に確認します。</span>
+  </a>
+
   <a class="manual-home-card" href="metamoji/">
     <span class="manual-home-card__eyebrow">授業・教材・年度更新</span>
     <strong>MetaMoJi ClassRoom</strong>
@@ -30,8 +36,11 @@
 
 ## このマニュアルの見方
 
-左側のメニューから、使用するアプリ・機器を選択してください。
+初めて授業を担当するときや、授業当日の操作順を確認するときは、まず **［授業配信の流れ］** を確認してください。
 
+各機器・アプリの詳しい操作は、左側のメニューから確認できます。
+
+- **授業配信の流れ**：授業前・授業中・授業終了までの操作順
 - **MetaMoJi ClassRoom**
   - **操作編**：授業を行う先生が使う基本操作
   - **管理者編**：生徒登録、クラス作成、クラス所属、QRコード、年度更新

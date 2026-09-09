@@ -4,6 +4,7 @@ site_url: https://a-recs.github.io/remote-manual/
 
 nav:
   - ホーム: index.md
+  - 授業配信の流れ: lesson-flow/index.md
   - MetaMoJi ClassRoom:
       - metamoji/index.md
       - 操作編:
@@ -21,10 +22,9 @@ nav:
           - CSV一括登録: metamoji/admin/05-bulk-import.md
           - QRコード: metamoji/admin/04-qr.md
           - 年度更新: metamoji/admin/02-annual-renewal.md
+  - Zoom: zoom/index.md
   - Neat Pulse: neat-pulse/index.md
   - ATEM Mini Pro: atem-mini-pro/index.md
-  - Zoom: zoom/index.md
-  - 授業配信の流れ: lesson-flow/index.md
 
 theme:
   name: material

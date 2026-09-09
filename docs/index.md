@@ -3,16 +3,22 @@
 遠隔授業の準備・配信・運営に必要な操作を、**必要なときにすぐ確認できる**ようにまとめたWebマニュアルです。
 
 <div class="manual-home-grid">
-  <a class="manual-home-card" href="lesson-flow/">
-    <span class="manual-home-card__eyebrow">授業当日の流れを確認する</span>
+  <a class="manual-home-card manual-home-card--primary" href="lesson-flow/">
+    <span class="manual-home-card__eyebrow">まずここから</span>
     <strong>授業配信の流れ</strong>
-    <span>授業前・授業中・授業終了までに行う操作を、順番に確認します。</span>
+    <span>授業前・授業中・授業終了の順に、当日の最低限の操作を確認します。</span>
   </a>
 
   <a class="manual-home-card" href="metamoji/">
     <span class="manual-home-card__eyebrow">授業・教材・年度更新</span>
     <strong>MetaMoJi ClassRoom</strong>
-    <span>授業で使う操作編と、授業開始に必要な設定を行う管理者編を確認します。</span>
+    <span>授業で使う基本操作と、授業開始に必要な管理設定を確認します。</span>
+  </a>
+
+  <a class="manual-home-card" href="zoom/">
+    <span class="manual-home-card__eyebrow">授業用ミーティングを準備する</span>
+    <strong>Zoom</strong>
+    <span>ミーティング作成、受信校のビュー設定、授業開始前の画面確認を行います。</span>
   </a>
 
   <a class="manual-home-card" href="neat-pulse/">
@@ -26,12 +32,6 @@
     <strong>ATEM Mini Pro</strong>
     <span>遠隔授業で使用する映像の切り替えと合成の基本操作を確認します。</span>
   </a>
-
-  <a class="manual-home-card" href="zoom/">
-    <span class="manual-home-card__eyebrow">授業用ミーティングを準備する</span>
-    <strong>Zoom</strong>
-    <span>ミーティング作成、受信校のビュー設定、授業開始前の画面確認を行います。</span>
-  </a>
 </div>
 
 ## このマニュアルの見方
@@ -44,11 +44,9 @@
 - **MetaMoJi ClassRoom**
   - **操作編**：授業を行う先生が使う基本操作
   - **管理者編**：生徒登録、クラス作成、クラス所属、QRコード、年度更新
+- **Zoom**：ミーティング作成、受信校のビュー設定、授業開始前の画面確認
 - **Neat Pulse**：受信校端末の状態確認・遠隔操作
 - **ATEM Mini Pro**：配信映像の切り替え・合成の基本操作
-- **Zoom**：ミーティング作成、受信校のビュー設定、授業開始前の画面確認
-
-各ページは、**実際の作業順に確認できること**を基本に構成します。
 
 !!! info "公開用の画面について"
     学校名・教員名・生徒名・ユーザーIDなどが必要な画面例では、**A高校・B高校、教員A、生徒01**などのダミー情報を使用します。

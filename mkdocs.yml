@@ -24,6 +24,7 @@ nav:
   - Neat Pulse: neat-pulse/index.md
   - ATEM Mini Pro: atem-mini-pro/index.md
   - Zoom: zoom/index.md
+  - 授業配信の流れ: lesson-flow/index.md
 
 theme:
   name: material

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560">
+  <rect width="980" height="560" fill="#f6f7f9"/>
+  <rect x="0" y="0" width="210" height="560" fill="#20242a"/>
+  <text x="28" y="48" font-family="Arial,'Noto Sans JP',sans-serif" font-size="24" font-weight="700" fill="#fff">Neat Pulse</text>
+  <g font-family="Arial,'Noto Sans JP',sans-serif" font-size="16" fill="#d7dce3">
+    <rect x="14" y="88" width="182" height="44" rx="7" fill="#343a43"/>
+    <text x="42" y="116" font-weight="700" fill="#fff">Devices</text>
+    <text x="42" y="165">Rooms</text>
+    <text x="42" y="207">Profiles</text>
+  </g>
+  <text x="250" y="58" font-family="Arial,'Noto Sans JP',sans-serif" font-size="28" font-weight="700" fill="#20242a">A高校　遠隔授業教室</text>
+  <text x="250" y="88" font-family="Arial,'Noto Sans JP',sans-serif" font-size="14" fill="#727a84">Neat Bar Pro　オンライン</text>
+  <rect x="250" y="118" width="680" height="335" rx="12" fill="#fff" stroke="#d8dde4"/>
+  <rect x="285" y="155" width="390" height="220" rx="8" fill="#222831"/>
+  <rect x="320" y="185" width="320" height="160" rx="5" fill="#e7edf5"/>
+  <text x="480" y="262" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="20" font-weight="700" fill="#46515e">Neat端末の画面</text>
+  <text x="480" y="292" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="14" fill="#68727e">ブラウザから状態を見ながら操作</text>
+  <rect x="720" y="165" width="165" height="48" rx="8" fill="#365fb8"/>
+  <text x="802" y="195" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="15" font-weight="700" fill="#fff">Remote control</text>
+  <rect x="720" y="230" width="165" height="48" rx="8" fill="#f2f4f7" stroke="#d2d8df"/>
+  <text x="802" y="260" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="14" fill="#333">端末情報</text>
+  <rect x="720" y="295" width="165" height="48" rx="8" fill="#f2f4f7" stroke="#d2d8df"/>
+  <text x="802" y="325" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="14" fill="#333">設定</text>
+  <text x="250" y="505" font-family="Arial,'Noto Sans JP',sans-serif" font-size="15" font-weight="700" fill="#365fb8">［Remote control］を選択して遠隔操作を開始</text>
+</svg>

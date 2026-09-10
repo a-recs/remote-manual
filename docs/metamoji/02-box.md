@@ -25,7 +25,7 @@ MetaMoJi ClassRoomでは、遠隔授業の準備と実施で主に **「マイ�
 
 複数の学校を担当している場合でも、マイボックスは共通して利用します。
 
-<img src="../images/metamoji/02-mybox.svg" alt="マイボックスの画面例" loading="lazy" style="width:300px; max-width:100%; height:auto; display:block; margin:0.8rem 0;">
+<img src="../../images/metamoji/02-mybox.svg" alt="マイボックスの画面例" loading="lazy" style="width:300px; max-width:100%; height:auto; display:block; margin:0.8rem 0;">
 <small>画面例（公開用に一部加工）</small>
 
 ### 教材を整理する
@@ -96,11 +96,11 @@ MetaMoJi ClassRoomでは、遠隔授業の準備と実施で主に **「マイ�
 
 <div style="display:flex; flex-wrap:wrap; gap:1rem; align-items:flex-start; margin:0.8rem 0;">
   <div>
-    <img src="../images/metamoji/02-classbox.svg" alt="クラスボックス一覧の画面例" loading="lazy" style="width:280px; max-width:100%; height:auto; display:block;">
+    <img src="../../images/metamoji/02-classbox.svg" alt="クラスボックス一覧の画面例" loading="lazy" style="width:280px; max-width:100%; height:auto; display:block;">
     <small>クラスボックス一覧</small>
   </div>
   <div>
-    <img src="../images/metamoji/02-classbox-content.svg" alt="クラスボックス内の授業ノートの画面例" loading="lazy" style="width:280px; max-width:100%; height:auto; display:block;">
+    <img src="../../images/metamoji/02-classbox-content.svg" alt="クラスボックス内の授業ノートの画面例" loading="lazy" style="width:280px; max-width:100%; height:auto; display:block;">
     <small>クラスを開いた画面</small>
   </div>
 </div>

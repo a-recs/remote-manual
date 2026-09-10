@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="500" viewBox="0 0 760 500">
+  <rect width="760" height="500" fill="#f5f6f8"/>
+  <rect x="170" y="55" width="420" height="390" rx="16" fill="#fff" stroke="#d9dde3"/>
+  <text x="380" y="115" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="30" font-weight="700" fill="#20242a">Neat Pulse</text>
+  <text x="380" y="150" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="16" fill="#68707a">Sign in to continue</text>
+  <rect x="235" y="185" width="290" height="48" rx="7" fill="#fff" stroke="#cfd5dc"/>
+  <text x="380" y="216" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="16" fill="#222">Googleでサインイン</text>
+  <rect x="235" y="245" width="290" height="48" rx="7" fill="#fff" stroke="#cfd5dc"/>
+  <text x="380" y="276" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="16" fill="#222">Microsoftでサインイン</text>
+  <line x1="235" y1="320" x2="345" y2="320" stroke="#d9dde3"/>
+  <text x="380" y="325" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="14" fill="#8b929b">または</text>
+  <line x1="415" y1="320" x2="525" y2="320" stroke="#d9dde3"/>
+  <rect x="235" y="345" width="290" height="42" rx="6" fill="#fff" stroke="#cfd5dc"/>
+  <text x="250" y="372" font-family="Arial,'Noto Sans JP',sans-serif" font-size="14" fill="#8b929b">メールアドレス</text>
+  <rect x="235" y="398" width="290" height="42" rx="6" fill="#222"/>
+  <text x="380" y="425" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="15" font-weight="700" fill="#fff">続行</text>
+</svg>

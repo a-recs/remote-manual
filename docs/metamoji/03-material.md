@@ -28,7 +28,7 @@ PDFをマイボックスへ追加する方法は、次の2つです。
 3. **［新規］→［ファイルから］** を選択します。
 4. 使用するPDFを選択します。
 
-<img src="../../images/metamoji/03-add-file.svg" alt="新規からファイルを追加する画面例" loading="lazy" style="width:300px; max-width:100%; height:auto; display:block; margin:0.8rem 0;">
+<img src="../../images/metamoji/03-add-file.svg" alt="新規からファイルを追加する画面例" loading="lazy" style="width:183px; max-width:100%; height:auto; display:block; margin:0.8rem 0;">
 <small>画面例（公開用に一部加工）</small>
 
 ### 方法2　ドラッグ＆ドロップ
@@ -52,7 +52,7 @@ PC上のPDFファイルを、**マイボックスへ直接ドラッグ＆ドロ�
 
 配布する教材を開き、右側の **［配布］** を選択します。
 
-<img src="../../images/metamoji/03-distribute-button.svg" alt="教材画面の配布ボタンの位置" loading="lazy" style="width:320px; max-width:100%; height:auto; display:block; margin:0.8rem 0;">
+<img src="../../images/metamoji/03-distribute-button.svg" alt="教材画面の配布ボタンの位置" loading="lazy" style="width:66px; max-width:100%; height:auto; display:block; margin:0.8rem 0;">
 
 ### 2　配布先を追加する
 

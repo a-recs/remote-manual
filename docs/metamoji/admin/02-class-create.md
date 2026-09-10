@@ -42,6 +42,9 @@
 
 クラスの数が少ない場合は、個別に追加します。
 
+<img src="../../../images/metamoji/admin/class-create.svg" alt="年度とクラスを管理する画面例" loading="lazy" style="width:380px; max-width:100%; height:auto; display:block; margin:0.8rem 0;">
+<small>画面例（公式マニュアルを参考にした公開用イメージ）</small>
+
 ### 入力する内容
 
 **クラス名**に、授業で使用する名称を入力します。

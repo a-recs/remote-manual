@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500">
+  <rect width="900" height="500" fill="#d9d9d9"/>
+  <rect x="0" y="0" width="900" height="70" fill="#ffffff"/>
+  <text x="28" y="44" font-family="Arial,'Noto Sans JP',sans-serif" font-size="27" font-weight="700" fill="#222">授業ノート</text>
+  <g font-family="Arial,'Noto Sans JP',sans-serif" font-size="17" fill="#222">
+    <text x="310" y="44">見る</text><text x="365" y="44">指す</text><text x="420" y="44">書く</text><text x="475" y="44">マーカー</text>
+  </g>
+  <rect x="150" y="85" width="590" height="370" fill="#ffffff"/>
+  <line x1="445" y1="105" x2="445" y2="425" stroke="#666" stroke-width="2"/>
+  <rect x="490" y="145" width="165" height="90" fill="#dff0c9"/>
+  <path d="M510 215 C545 175 580 200 602 165 C625 130 650 177 640 220" fill="none" stroke="#222" stroke-width="4"/>
+  <rect x="820" y="110" width="54" height="54" rx="8" fill="#ffffff" stroke="#c7ccd2"/>
+  <text x="847" y="144" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="16" fill="#222">教材</text>
+  <rect x="820" y="180" width="54" height="70" rx="8" fill="#e8f0ff" stroke="#2f7df6" stroke-width="2"/>
+  <text x="847" y="212" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="15" font-weight="700" fill="#2f7df6">配布</text>
+  <path d="M847 222 v18 m-8-8 8 8 8-8" fill="none" stroke="#2f7df6" stroke-width="2"/>
+  <path d="M785 215 H742" stroke="#2f7df6" stroke-width="4"/>
+  <path d="M750 205 L738 215 L750 225" fill="none" stroke="#2f7df6" stroke-width="4"/>
+  <text x="565" y="300" font-family="Arial,'Noto Sans JP',sans-serif" font-size="22" font-weight="700" fill="#2f7df6">右側の［配布］を選択</text>
+</svg>

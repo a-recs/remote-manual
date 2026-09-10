@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="500" viewBox="0 0 940 500">
+  <rect width="940" height="500" fill="#efefef"/>
+  <rect x="30" y="45" width="410" height="410" rx="10" fill="#fff" stroke="#c9cdd2" stroke-width="2"/>
+  <text x="60" y="88" font-family="Arial,'Noto Sans JP',sans-serif" font-size="25" font-weight="700" fill="#222">配布先を選択</text>
+  <rect x="65" y="135" width="340" height="220" fill="#fafafa" stroke="#d0d3d7"/>
+  <g font-family="Arial,'Noto Sans JP',sans-serif" font-size="18" fill="#222">
+    <rect x="90" y="190" width="70" height="70" rx="8" fill="#d9dde3" stroke="#444"/>
+    <rect x="185" y="190" width="70" height="70" rx="8" fill="#d9dde3" stroke="#444"/>
+    <rect x="280" y="190" width="70" height="70" rx="8" fill="#d9dde3" stroke="#444"/>
+    <text x="125" y="292" text-anchor="middle" font-weight="700">クラスボックス</text>
+    <text x="220" y="292" text-anchor="middle">学校ボックス</text>
+    <text x="315" y="292" text-anchor="middle">団体ボックス</text>
+  </g>
+  <rect x="490" y="45" width="420" height="410" rx="10" fill="#fff" stroke="#c9cdd2" stroke-width="2"/>
+  <text x="520" y="88" font-family="Arial,'Noto Sans JP',sans-serif" font-size="25" font-weight="700" fill="#222">クラスを選択</text>
+  <rect x="530" y="135" width="330" height="220" fill="#fafafa" stroke="#d0d3d7"/>
+  <rect x="565" y="185" width="105" height="100" rx="8" fill="#f2f3f5" stroke="#777"/>
+  <path d="M585 238 h64 v30 h-64z M598 212 h38 l8 10 h-54z" fill="none" stroke="#333" stroke-width="3"/>
+  <text x="617" y="320" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="20" font-weight="700" fill="#222">A高校 1年A組</text>
+  <rect x="730" y="390" width="130" height="42" rx="5" fill="#2f7df6"/>
+  <text x="795" y="418" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="18" font-weight="700" fill="#fff">OK</text>
+  <path d="M445 250 H485" stroke="#2f7df6" stroke-width="4"/>
+  <path d="M475 240 L487 250 L475 260" fill="none" stroke="#2f7df6" stroke-width="4"/>
+</svg>

@@ -10,9 +10,53 @@ ATEM Mini Proは、遠隔授業で使用する映像を切り替えたり、ク�
 
 複数の映像入力を切り替え、授業用の映像として出力するビデオスイッチャーです。
 
-![ATEM Mini Pro本体](../images/Atem/Atem01.png)
+![ATEM Mini Pro本体](../images/Atem/Atem01.png){ #atem-main-photo }
 
 *ATEM Mini Pro本体。1〜4のボタンで入力映像を選択します。*
+
+<img
+  id="atem-follow-photo"
+  src="../images/Atem/Atem01.png"
+  alt="ATEM Mini Pro本体（追従表示）"
+  aria-hidden="true"
+>
+
+<style>
+  #atem-follow-photo {
+    display: none;
+  }
+
+  @media screen and (min-width: 76.25em) {
+    #atem-follow-photo.is-visible {
+      display: block;
+      position: fixed;
+      top: 4.8rem;
+      right: max(1rem, calc((100vw - 61rem) / 2 + 12.1rem));
+      z-index: 2;
+      width: 11rem;
+      max-height: calc(100vh - 6rem);
+      margin: 0;
+      border-radius: 0.2rem;
+      box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 18%);
+      object-fit: contain;
+    }
+  }
+</style>
+
+<script>
+  (() => {
+    const mainPhoto = document.getElementById("atem-main-photo");
+    const followPhoto = document.getElementById("atem-follow-photo");
+
+    if (!mainPhoto || !followPhoto || !("IntersectionObserver" in window)) return;
+
+    const observer = new IntersectionObserver(([entry]) => {
+      followPhoto.classList.toggle("is-visible", !entry.isIntersecting);
+    });
+
+    observer.observe(mainPhoto);
+  })();
+</script>
 
 ## 映像を切り替える
 

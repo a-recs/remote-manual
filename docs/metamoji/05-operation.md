@@ -72,6 +72,9 @@
 
 右側の **［モニタ］** を選択すると、生徒ごとの書き込みや学習状況を一覧で確認できます。
 
+<img src="../../images/metamoji/05-monitor.svg" alt="モニタリング画面の例" loading="lazy" style="width:420px; max-width:100%; height:auto; display:block; margin:0.8rem 0;">
+<small>画面例（公開用に氏名等を置き換え）</small>
+
 主に次のような確認に使用します。
 
 - 生徒の書き込み状況

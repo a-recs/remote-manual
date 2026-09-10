@@ -14,6 +14,9 @@
 | **板書レイヤー** | 生徒のノートに直接書き込むイメージ。生徒のノートにも残る。<br>**デフォルトでは板書レイヤーが選択されている。** |
 | **教材レイヤー** | 教材作成に使う。 |
 
+<img src="../../images/metamoji/04-layer-menu.svg" alt="先生レイヤー・板書レイヤー・教材レイヤーの選択画面" loading="lazy" style="width:220px; max-width:100%; height:auto; display:block; margin:0.8rem 0;">
+<small>レイヤー選択画面（公開用に一部加工）</small>
+
 !!! danger "ここが重要"
     <strong>先生レイヤーの内容は生徒のノートには<span class="layer-no">反映されません</span>。</strong>  
     <strong>板書レイヤーの内容は生徒のノートにも<span class="layer-yes">残ります</span>。</strong>
@@ -25,6 +28,9 @@
 先生レイヤーは、**授業でいう黒板に書くような感覚で使用するレイヤー**です。
 
 書き込んだ内容は、生徒のノートには反映されません。
+
+<img src="../../images/metamoji/04-teacher-compare.svg" alt="先生レイヤーは教員画面だけに表示され、生徒画面には表示されない例" loading="lazy" style="width:480px; max-width:100%; height:auto; display:block; margin:0.8rem 0;">
+<small>先生レイヤーの表示例</small>
 
 ### 使用例
 
@@ -45,6 +51,9 @@
 板書レイヤーに書いた内容は、生徒のノートにも残ります。
 
 また、**授業ノートを開いたときは、デフォルトで板書レイヤーが選択されています。**
+
+<img src="../../images/metamoji/04-board-compare.svg" alt="板書レイヤーの内容が教員画面と生徒画面の両方に表示される例" loading="lazy" style="width:480px; max-width:100%; height:auto; display:block; margin:0.8rem 0;">
+<small>板書レイヤーの表示例</small>
 
 ### 使用例
 

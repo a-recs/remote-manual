@@ -6,7 +6,7 @@ ATEM Software Controlは、ATEM Mini Proをパソコン上から操作するた�
 
 *ATEM Software Control の全体画面*
 
-## PROGRAM / PREVIEW
+## プログラム／プレビュー
 
 **PROGRAM**は、現在出力している映像です。
 

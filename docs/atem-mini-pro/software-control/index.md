@@ -2,6 +2,10 @@
 
 ATEM Software Controlは、ATEM Mini Proをパソコン上から操作するためのソフトウェアです。
 
+![ATEM Software Control の全体画面](../../images/Atem/ATEMSoft.png)
+
+*ATEM Software Control の全体画面*
+
 ## PROGRAM / PREVIEW
 
 **PROGRAM**は、現在出力している映像です。

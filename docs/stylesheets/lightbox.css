@@ -1,0 +1,113 @@
+/* Manual screenshot thumbnails */
+.manual-image-wrap {
+  margin: 0.9rem 0 1.35rem;
+}
+
+.manual-lightbox-thumb {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.55rem;
+  box-shadow: 0 0.16rem 0.5rem rgba(0, 0, 0, 0.10);
+  cursor: zoom-in;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.manual-lightbox-thumb:hover,
+.manual-lightbox-thumb:focus-visible {
+  transform: translateY(-0.08rem);
+  border-color: color-mix(in srgb, var(--md-primary-fg-color) 45%, var(--md-default-fg-color--lightest));
+  box-shadow: 0 0.3rem 0.8rem rgba(0, 0, 0, 0.16);
+  outline: none;
+}
+
+.manual-image-note {
+  margin-top: 0.45rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.78rem;
+}
+
+/* In-page modal image viewer */
+.manual-lightbox {
+  width: auto;
+  max-width: none;
+  max-height: none;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+}
+
+.manual-lightbox::backdrop {
+  background: rgba(0, 0, 0, 0.76);
+  backdrop-filter: blur(2px);
+}
+
+.manual-lightbox__inner {
+  position: relative;
+  max-width: min(94vw, 92rem);
+  max-height: 92vh;
+  padding: 1rem;
+  overflow: auto;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 0.75rem;
+  background: #15181e;
+  box-shadow: 0 1.2rem 3rem rgba(0, 0, 0, 0.45);
+}
+
+.manual-lightbox__image {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(90vw, 88rem);
+  max-height: 80vh;
+  margin: 0 auto;
+  border-radius: 0.4rem;
+  object-fit: contain;
+}
+
+.manual-lightbox__caption {
+  margin: 0.7rem 2.8rem 0.1rem 0.15rem;
+  color: #e7eaf0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.manual-lightbox__close {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  float: right;
+  width: 2.35rem;
+  height: 2.35rem;
+  margin: 0 0 0.45rem 0.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(25, 28, 34, 0.88);
+  color: #fff;
+  font-size: 1.45rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.manual-lightbox__close:hover,
+.manual-lightbox__close:focus-visible {
+  background: rgba(255, 255, 255, 0.16);
+  outline: 2px solid rgba(255, 255, 255, 0.55);
+  outline-offset: 2px;
+}
+
+@media screen and (max-width: 40em) {
+  .manual-lightbox__inner {
+    max-width: 96vw;
+    max-height: 94vh;
+    padding: 0.65rem;
+  }
+
+  .manual-lightbox__image {
+    max-width: 92vw;
+    max-height: 80vh;
+  }
+}

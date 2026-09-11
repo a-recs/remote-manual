@@ -6,12 +6,7 @@ ATEM Mini Pro本体で、授業中に使用する基本操作を説明します�
 
 *ATEM Mini Pro本体。1〜4のボタンで入力映像を選択します。*
 
-<img
-  id="atem-follow-photo"
-  src="../../images/Atem/Atem01.png"
-  alt="ATEM Mini Pro本体（追従表示）"
-  aria-hidden="true"
->
+<img id="atem-follow-photo" src="../../images/Atem/Atem01.png" alt="ATEM Mini Pro本体（追従表示）" aria-hidden="true">
 
 <style>
   #atem-follow-photo {
@@ -22,10 +17,10 @@ ATEM Mini Pro本体で、授業中に使用する基本操作を説明します�
     #atem-follow-photo.is-visible {
       display: block;
       position: fixed;
-      right: max(1rem, calc((100vw - 61rem) / 2 + 12.1rem));
-      bottom: 1rem;
+      bottom: 4.5rem;
+      right: 1.5rem;
       z-index: 2;
-      width: 11rem;
+      width: 16rem;
       max-height: calc(100vh - 6rem);
       margin: 0;
       border-radius: 0.2rem;

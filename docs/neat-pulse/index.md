@@ -14,8 +14,10 @@ WebブラウザでNeat Pulseを開き、ログインします。
 
 ログインには、**Googleアカウント、Microsoftアカウント、SAML SSO、またはメールアドレスとパスワード**を使用できます。
 
-<img src="../images/neat-pulse/01-login.svg" alt="Neat Pulseログイン画面" loading="lazy" style="width:340px; max-width:100%; height:auto; display:block; margin:0.8rem 0;">
-<small>実際の画面例</small>
+<a href="../images/neat-pulse/01-login.svg" target="_blank" rel="noopener">
+  <img src="../images/neat-pulse/01-login.svg" alt="Neat Pulseログイン画面" loading="lazy" style="width:480px; max-width:100%; height:auto; display:block; margin:0.8rem 0 0.35rem; cursor:zoom-in;">
+</a>
+<small>実際の画面例　※画像をクリックすると拡大表示できます。</small>
 
 ---
 
@@ -27,8 +29,10 @@ WebブラウザでNeat Pulseを開き、ログインします。
 2. 確認したい学校・教室の端末を探します。
 3. 対象端末の状態を確認します。
 
-<img src="../images/neat-pulse/02-devices.svg" alt="Neat Pulse Devices画面" loading="lazy" style="width:430px; max-width:100%; height:auto; display:block; margin:0.8rem 0;">
-<small>実際の画面例（学校名・端末名等は公開用にぼかしています）</small>
+<a href="../images/neat-pulse/02-devices.svg" target="_blank" rel="noopener">
+  <img src="../images/neat-pulse/02-devices.svg" alt="Neat Pulse Devices画面" loading="lazy" style="width:560px; max-width:100%; height:auto; display:block; margin:0.8rem 0 0.35rem; cursor:zoom-in;">
+</a>
+<small>実際の画面例（学校名・端末名等は公開用にぼかしています）　※画像をクリックすると拡大表示できます。</small>
 
 | 状態 | 対応の目安 |
 |---|---|
@@ -47,14 +51,18 @@ WebブラウザでNeat Pulseを開き、ログインします。
 1. **［Devices］** から対象端末を選択します。
 2. 端末の詳細画面右上にある **［Remote control this device］** のアイコンを選択します。
 
-<img src="../images/neat-pulse/03-remote-control.svg" alt="Neat Pulse端末詳細画面のRemote controlボタン" loading="lazy" style="width:430px; max-width:100%; height:auto; display:block; margin:0.8rem 0;">
-<small>実際の画面例（端末名・IPアドレス・MACアドレス・シリアル番号等は公開用にぼかしています）</small>
+<a href="../images/neat-pulse/03-remote-control.svg" target="_blank" rel="noopener">
+  <img src="../images/neat-pulse/03-remote-control.svg" alt="Neat Pulse端末詳細画面のRemote controlボタン" loading="lazy" style="width:560px; max-width:100%; height:auto; display:block; margin:0.8rem 0 0.35rem; cursor:zoom-in;">
+</a>
+<small>実際の画面例（端末名・IPアドレス・MACアドレス・シリアル番号等は公開用にぼかしています）　※画像をクリックすると拡大表示できます。</small>
 
 3. 別のブラウザ画面で、対象のNeat端末の画面が表示されます。
 4. 表示された画面を操作して、必要な対応を行います。
 
-<img src="../images/neat-pulse/04-remote-session.svg" alt="Neat Pulseリモート操作画面" loading="lazy" style="width:430px; max-width:100%; height:auto; display:block; margin:0.8rem 0;">
-<small>実際の画面例（端末名・シリアル番号・操作者名・ルームコード等は公開用にぼかしています）</small>
+<a href="../images/neat-pulse/04-remote-session.svg" target="_blank" rel="noopener">
+  <img src="../images/neat-pulse/04-remote-session.svg" alt="Neat Pulseリモート操作画面" loading="lazy" style="width:560px; max-width:100%; height:auto; display:block; margin:0.8rem 0 0.35rem; cursor:zoom-in;">
+</a>
+<small>実際の画面例（端末名・シリアル番号・操作者名・ルームコード等は公開用にぼかしています）　※画像をクリックすると拡大表示できます。</small>
 
 5. 操作が終わったら、Neat端末が通常の画面に戻っていることを確認して遠隔操作を終了します。
 

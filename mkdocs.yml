@@ -56,3 +56,6 @@ extra_css:
   - stylesheets/extra.css
   - stylesheets/sidebar-v2.css
   - stylesheets/ui-polish.css
+
+extra_javascript:
+  - javascripts/lightbox.js

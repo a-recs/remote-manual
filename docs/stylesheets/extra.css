@@ -240,6 +240,27 @@
 
 .md-typeset blockquote { border-left-width: 0.2rem; }
 
+/* クロマキー合成の表示例 */
+.md-typeset .chroma-key-example {
+  max-width: 40rem;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.md-typeset .chroma-key-example img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.md-typeset .chroma-key-example figcaption {
+  margin-top: 0.5rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
 /* ==================================================
    ダークモード専用：長時間読んでも疲れにくい配色
    ライトモードには影響させない

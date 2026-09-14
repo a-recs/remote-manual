@@ -1,0 +1,255 @@
+/* A-RECS 全体UI調整
+   内容は変えず、ホーム・画像・管理者編・授業配信の流れを見やすくする。 */
+
+/* ==================================================
+   1. ホーム：授業配信の流れを最優先に見せる
+================================================== */
+.manual-home-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.manual-home-card--primary {
+  grid-column: 1 / -1;
+  min-height: 8rem;
+  border-width: 0.1rem;
+  border-color: color-mix(in srgb, var(--md-primary-fg-color) 45%, var(--md-default-fg-color--lightest));
+  background: color-mix(in srgb, var(--md-primary-fg-color) 5%, var(--md-default-bg-color));
+}
+
+.manual-home-card--primary strong {
+  font-size: 1.22rem;
+}
+
+.manual-home-card--primary .manual-home-card__eyebrow {
+  padding: 0.16rem 0.48rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--md-primary-fg-color) 12%, transparent);
+}
+
+@media screen and (max-width: 60em) {
+  .manual-home-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .manual-home-card--primary {
+    grid-column: auto;
+  }
+}
+
+/* ==================================================
+   2. MetaMoJiの画面例：小さくても見やすく統一
+================================================== */
+.md-typeset img[src*="images/metamoji/"]:not([src*="/icons/"]) {
+  box-sizing: border-box;
+  border: 1px solid color-mix(in srgb, var(--md-default-fg-color) 16%, transparent);
+  border-radius: 0.42rem;
+  background: #fff;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.08);
+}
+
+.md-typeset img[src*="images/metamoji/"]:not([src*="/icons/"]) + small {
+  display: block;
+  margin-top: -0.25rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.78rem;
+}
+
+/* ==================================================
+   3. 左メニュー：具体的なページ名を少し読みやすく
+================================================== */
+.md-nav--primary > .md-nav__list > .md-nav__item
+  > .md-nav > .md-nav__list > .md-nav__item > .md-nav .md-nav__link {
+  font-size: 0.81rem !important;
+  line-height: 1.5 !important;
+}
+
+/* ==================================================
+   4. 管理者編トップ：個別登録と一括登録を分けて見せる
+================================================== */
+.admin-choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 1.6rem;
+  max-width: 58rem;
+}
+
+.admin-choice-card {
+  padding: 1rem 1.1rem;
+  box-sizing: border-box;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.55rem;
+  background: var(--md-default-bg-color);
+}
+
+.admin-choice-card__eyebrow {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--md-primary-fg-color);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.admin-choice-card > strong {
+  display: block;
+  margin-bottom: 0.55rem;
+  font-size: 1.05rem;
+}
+
+.admin-choice-card ol,
+.admin-choice-card p {
+  margin-bottom: 0.5rem;
+}
+
+.admin-annual-card {
+  max-width: 58rem;
+  margin: 0.8rem 0 1.8rem;
+  padding: 0.9rem 1.1rem;
+  border-left: 0.24rem solid var(--md-primary-fg-color);
+  border-radius: 0.35rem;
+  background: color-mix(in srgb, var(--md-primary-fg-color) 5%, transparent);
+}
+
+@media screen and (max-width: 60em) {
+  .admin-choice-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==================================================
+   5. 授業配信の流れ：当日に上から追うだけの画面
+================================================== */
+.lesson-phase-nav {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.7rem;
+  margin: 1.2rem 0 2rem;
+  max-width: 58rem;
+}
+
+.lesson-phase-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  color: var(--md-default-fg-color) !important;
+  text-decoration: none;
+  background: var(--md-default-bg-color);
+}
+
+.lesson-phase-link:hover {
+  border-color: color-mix(in srgb, var(--md-primary-fg-color) 45%, var(--md-default-fg-color--lightest));
+  background: color-mix(in srgb, var(--md-primary-fg-color) 4%, var(--md-default-bg-color));
+}
+
+.lesson-phase-link strong {
+  font-size: 1rem;
+}
+
+.lesson-phase-link span {
+  color: var(--md-default-fg-color--light);
+  font-size: 0.8rem;
+}
+
+.lesson-flow-section {
+  display: grid;
+  gap: 0.75rem;
+  max-width: 58rem;
+  margin: 0.6rem 0 2.2rem;
+}
+
+.lesson-step {
+  display: grid;
+  grid-template-columns: 2.35rem minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: start;
+  padding: 0.95rem 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.55rem;
+  background: var(--md-default-bg-color);
+}
+
+.lesson-step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 999px;
+  background: var(--md-primary-fg-color);
+  color: #fff;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.lesson-step-body > strong {
+  display: block;
+  margin: 0.05rem 0 0.28rem;
+  font-size: 1.02rem;
+}
+
+.lesson-step-body p {
+  margin: 0.25rem 0 0.55rem;
+}
+
+.lesson-step-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.42rem;
+}
+
+.lesson-step-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.9rem;
+  padding: 0.2rem 0.58rem;
+  border: 1px solid color-mix(in srgb, var(--md-primary-fg-color) 28%, var(--md-default-fg-color--lightest));
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--md-primary-fg-color) 5%, transparent);
+  color: var(--md-primary-fg-color) !important;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.lesson-step-links a:hover {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 11%, transparent);
+}
+
+.lesson-step--finish {
+  border-color: color-mix(in srgb, var(--md-primary-fg-color) 42%, var(--md-default-fg-color--lightest));
+  background: color-mix(in srgb, var(--md-primary-fg-color) 4%, var(--md-default-bg-color));
+}
+
+@media screen and (max-width: 60em) {
+  .lesson-phase-nav {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==================================================
+   6. ダークモードの追加調整
+================================================== */
+[data-md-color-scheme="slate"] .manual-home-card--primary,
+[data-md-color-scheme="slate"] .admin-choice-card,
+[data-md-color-scheme="slate"] .lesson-phase-link,
+[data-md-color-scheme="slate"] .lesson-step {
+  background: var(--arecs-dark-surface, #242933);
+  border-color: var(--arecs-dark-border, rgba(255,255,255,0.13));
+}
+
+[data-md-color-scheme="slate"] .manual-home-card--primary {
+  border-color: rgba(134, 169, 255, 0.5);
+  background: color-mix(in srgb, #4054b2 14%, var(--arecs-dark-surface, #242933));
+}
+
+[data-md-color-scheme="slate"] .admin-annual-card,
+[data-md-color-scheme="slate"] .lesson-step--finish {
+  background: color-mix(in srgb, #4054b2 10%, var(--arecs-dark-surface, #242933));
+}
+
+[data-md-color-scheme="slate"] .lesson-phase-link:hover {
+  background: var(--arecs-dark-surface-hover, #2a303c);
+}

@@ -23,6 +23,9 @@ MetaMoJi ClassRoom 3では、Excel形式またはCSV形式のファイルを使�
 
 一括登録に使用するファイルを準備します。
 
+<img src="../../../images/metamoji/admin/bulk-import.svg" alt="全項目一括登録の画面例" loading="lazy" style="width:390px; max-width:100%; height:auto; display:block; margin:0.8rem 0;">
+<small>画面例（公式ガイドの流れを参考にした公開用イメージ）</small>
+
 最初は、画面からExcel形式のファイルをダウンロードして、**項目名と並びを確認してから作成する**のがおすすめです。
 
 CSVを使用する場合も、同じ項目に合わせて作成します。

@@ -22,13 +22,16 @@ nav:
           - CSV一括登録: metamoji/admin/05-bulk-import.md
           - QRコード: metamoji/admin/04-qr.md
           - 年度更新: metamoji/admin/02-annual-renewal.md
-  - Zoom: zoom/index.md
+  - Zoom:
+      - zoom/index.md
+      - ミーティングを作成する: zoom/01-create-meeting.md
   - Neat Pulse: neat-pulse/index.md
   # ATEMの各操作項目はページ内の見出しとして扱い、ここでは3ページだけを表示する
   - ATEM Mini Pro:
-      - はじめに: atem-mini-pro/index.md
-      - ATEM本体操作: atem-mini-pro/operation/index.md
-      - ATEM Software Control: atem-mini-pro/software-control/index.md
+
+      - はじめに: atem-mini-pro/intro.md
+      - ATEM本体操作: atem-mini-pro/operation.md
+      - ATEM Software Control: atem-mini-pro/software-control.md
 
 theme:
   name: material
@@ -59,3 +62,8 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
   - stylesheets/sidebar-v2.css
+  - stylesheets/ui-polish.css
+  - stylesheets/lightbox.css
+
+extra_javascript:
+  - javascripts/lightbox.js

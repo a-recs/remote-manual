@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360">
+  <rect width="760" height="360" fill="#ffffff"/>
+  <text x="190" y="34" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="20" font-weight="700" fill="#222">教員画面</text>
+  <text x="570" y="34" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="20" font-weight="700" fill="#222">生徒画面</text>
+  <rect x="55" y="55" width="270" height="235" fill="#fefefe" stroke="#c9c9c9" stroke-width="2"/>
+  <rect x="435" y="55" width="270" height="235" fill="#fefefe" stroke="#c9c9c9" stroke-width="2"/>
+  <text x="190" y="90" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="18" fill="#222">教員の操作画面</text>
+  <text x="570" y="90" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="18" fill="#222">生徒の操作画面</text>
+  <text x="190" y="205" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="64" fill="#5b93ef">先生</text>
+  <path d="M342 170 H414" stroke="#4b77d1" stroke-width="4"/>
+  <path d="M402 158 L416 170 L402 182" fill="none" stroke="#4b77d1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="570" y="178" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="21" fill="#888">表示されない</text>
+  <rect x="220" y="305" width="320" height="38" rx="19" fill="#f2f4f7"/>
+  <text x="380" y="330" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="18" font-weight="700" fill="#555">先生レイヤーの内容は生徒には表示されない</text>
+</svg>

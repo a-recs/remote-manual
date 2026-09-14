@@ -16,6 +16,9 @@
 
 最初に、設定する**対象年度**が正しいことを確認します。
 
+<img src="../../../images/metamoji/admin/class-members.svg" alt="クラス分けの画面例" loading="lazy" style="width:390px; max-width:100%; height:auto; display:block; margin:0.8rem 0;">
+<small>画面例（公式マニュアルを参考にした公開用イメージ）</small>
+
 ---
 
 ## 2　生徒をクラスに所属させる

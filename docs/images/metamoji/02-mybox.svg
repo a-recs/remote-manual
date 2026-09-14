@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+  <rect width="900" height="520" fill="#ffffff"/>
+  <rect x="0" y="0" width="900" height="72" fill="#ffffff"/>
+  <rect x="0" y="72" width="200" height="448" fill="#f7f8fa"/>
+  <text x="28" y="45" font-family="Arial,'Noto Sans JP',sans-serif" font-size="30" font-weight="700" fill="#2a2a2a">MetaMoJi ClassRoom 3</text>
+  <g font-family="Arial,'Noto Sans JP',sans-serif" font-size="18" fill="#202020">
+    <text x="58" y="126">カレンダー</text>
+    <rect x="0" y="138" width="200" height="48" fill="#dce8ff"/>
+    <text x="58" y="170" font-weight="700">マイボックス</text>
+    <text x="58" y="218">クラスボックス</text>
+    <text x="58" y="266">学校ボックス</text>
+    <text x="58" y="314">団体ボックス</text>
+    <text x="58" y="362">過去のクラスボックス</text>
+  </g>
+  <g stroke="#222" fill="none" stroke-width="2">
+    <rect x="25" y="149" width="24" height="20" rx="3"/>
+    <path d="M27 149 h10 l3 -6 h8 l3 6"/>
+    <rect x="25" y="197" width="24" height="20" rx="2"/>
+    <rect x="25" y="245" width="24" height="20" rx="2"/>
+  </g>
+  <text x="230" y="118" font-family="Arial,'Noto Sans JP',sans-serif" font-size="24" font-weight="700" fill="#222">マイボックス</text>
+  <rect x="220" y="140" width="112" height="50" rx="25" fill="#2f7df6"/>
+  <text x="276" y="172" text-anchor="middle" font-family="Arial,'Noto Sans JP',sans-serif" font-size="20" font-weight="700" fill="#fff">＋ 新規</text>
+  <g font-family="Arial,'Noto Sans JP',sans-serif">
+    <g transform="translate(225 220)">
+      <rect width="180" height="210" rx="8" fill="#f3f4f6"/>
+      <rect x="18" y="18" width="144" height="120" fill="#ffffff" stroke="#d6d9de"/>
+      <path d="M35 100 C60 65 92 74 110 48 C125 27 148 51 150 78" fill="none" stroke="#5ca46d" stroke-width="4"/>
+      <text x="16" y="166" font-size="17" font-weight="700" fill="#222">A高校 物理教材</text>
+      <text x="16" y="192" font-size="14" fill="#777">授業準備用</text>
+    </g>
+    <g transform="translate(425 220)">
+      <rect width="180" height="210" rx="8" fill="#f3f4f6"/>
+      <rect x="18" y="18" width="144" height="120" fill="#ffffff" stroke="#d6d9de"/>
+      <line x1="40" y1="50" x2="140" y2="50" stroke="#777"/>
+      <line x1="40" y1="75" x2="130" y2="75" stroke="#777"/>
+      <line x1="40" y1="100" x2="120" y2="100" stroke="#777"/>
+      <text x="16" y="166" font-size="17" font-weight="700" fill="#222">第1回 授業資料</text>
+      <text x="16" y="192" font-size="14" fill="#777">PDF教材</text>
+    </g>
+    <g transform="translate(625 220)">
+      <rect width="180" height="210" rx="8" fill="#f3f4f6"/>
+      <rect x="18" y="18" width="144" height="120" fill="#ffffff" stroke="#d6d9de"/>
+      <circle cx="88" cy="74" r="36" fill="none" stroke="#d97676" stroke-width="3"/>
+      <line x1="88" y1="38" x2="88" y2="110" stroke="#d97676"/>
+      <text x="16" y="166" font-size="17" font-weight="700" fill="#222">演習プリント</text>
+      <text x="16" y="192" font-size="14" fill="#777">授業準備用</text>
+    </g>
+  </g>
+</svg>

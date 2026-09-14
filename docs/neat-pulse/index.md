@@ -2,51 +2,69 @@
 
 Neat Pulseは、離れた場所にあるNeat端末の状態を確認し、必要に応じて遠隔操作するために使用します。
 
-本マニュアルでは、遠隔授業の運用で使用する次の2つの操作に絞って説明します。
-
-1. **端末の状態を確認する**
-2. **遠隔操作する**
+本マニュアルでは、遠隔授業で必要な操作に絞って説明します。
 
 [Neat Pulseを開く](https://pulse.neat.no/){ .md-button .md-button--primary target="_blank" }
 
 ---
 
-## 1　端末の状態を確認する
+## 1　Neat Pulseにログインする
 
-受信校から「Neatが動かない」「画面を操作できない」などの連絡があった場合は、まずNeat Pulseで対象端末の状態を確認します。
+WebブラウザでNeat Pulseを開き、ログインします。
 
-### 確認手順
+ログインには、**Googleアカウント、Microsoftアカウント、SAML SSO、またはメールアドレスとパスワード**を使用できます。
 
-1. Neat Pulseにログインします。
-2. 左側の **［Devices］** を開きます。
-3. 確認したい学校・教室の端末を探します。
-4. 端末の状態を確認します。
-
-端末の画像付近に、オンライン・オフライン・更新中などの状態が表示されます。
-
-| 状態 | 対応の目安 |
-|---|---|
-| **オンライン** | Neat Pulseから端末を確認・遠隔操作できます。 |
-| **オフライン** | 受信校側で電源やネットワーク接続を確認します。 |
-| **更新中** | 更新が完了するまで待ってから、再度状態を確認します。 |
-
-!!! tip "最初に状態を確認"
-    遠隔操作を始める前に、対象端末が **オンライン** になっていることを確認します。
+<div class="manual-image-wrap">
+  <img src="../images/neat-pulse/01-login.svg" alt="Neat Pulseログイン画面" class="manual-lightbox-thumb" data-full="../images/neat-pulse/01-login.svg" data-caption="Neat Pulseログイン画面" loading="lazy" style="width:480px;">
+  <div class="manual-image-note">実際の画面例　※画像をクリックすると、このページ内で拡大表示できます。</div>
+</div>
 
 ---
 
-## 2　遠隔操作する
+## 2　端末の状態を確認する
 
-対象端末がオンラインの場合は、Neat Pulseから端末を遠隔操作できます。
+ログインすると、管理しているNeat端末を確認できる **［Devices］** 画面が表示されます。
 
-### 遠隔操作の手順
+1. **［Devices］** を開きます。
+2. 確認したい学校・教室の端末を探します。
+3. 対象端末の状態を確認します。
+
+<div class="manual-image-wrap">
+  <img src="../images/neat-pulse/02-devices.svg" alt="Neat Pulse Devices画面" class="manual-lightbox-thumb" data-full="../images/neat-pulse/02-devices.svg" data-caption="Neat Pulse Devices画面" loading="lazy" style="width:560px;">
+  <div class="manual-image-note">実際の画面例（学校名・端末名等は公開用にぼかしています）　※画像をクリックすると、このページ内で拡大表示できます。</div>
+</div>
+
+| 状態 | 対応の目安 |
+|---|---|
+| **オンライン** | Neat Pulseから端末を確認・遠隔操作します。 |
+| **オフライン** | 受信校側で電源やネットワーク接続を確認します。 |
+
+!!! tip "遠隔操作する前に"
+    対象端末が **オンライン** になっていることを確認します。
+
+---
+
+## 3　遠隔操作する
+
+対象端末がオンラインの場合は、Neat Pulseから遠隔操作します。
 
 1. **［Devices］** から対象端末を選択します。
-2. 端末の画面で **［Remote control］** を選択します。
-3. 新しいブラウザ画面で遠隔操作を開始します。
-4. 表示されたNeat端末の画面を操作します。
-5. 遠隔操作中にミーティングを開始した場合は、対応終了後に**ミーティングから退室します**。
-6. Neat端末が通常の画面に戻ったことを確認してから、遠隔操作を終了します。
+2. 端末の詳細画面右上にある **［Remote control this device］** のアイコンを選択します。
+
+<div class="manual-image-wrap">
+  <img src="../images/neat-pulse/03-remote-control.svg" alt="Neat Pulse端末詳細画面のRemote controlボタン" class="manual-lightbox-thumb" data-full="../images/neat-pulse/03-remote-control.svg" data-caption="Neat Pulse端末詳細画面のRemote controlボタン" loading="lazy" style="width:560px;">
+  <div class="manual-image-note">実際の画面例（端末名・IPアドレス・MACアドレス・シリアル番号等は公開用にぼかしています）　※画像をクリックすると、このページ内で拡大表示できます。</div>
+</div>
+
+3. 別のブラウザ画面で、対象のNeat端末の画面が表示されます。
+4. 表示された画面を操作して、必要な対応を行います。
+
+<div class="manual-image-wrap">
+  <img src="../images/neat-pulse/04-remote-session.svg" alt="Neat Pulseリモート操作画面" class="manual-lightbox-thumb" data-full="../images/neat-pulse/04-remote-session.svg" data-caption="Neat Pulseリモート操作画面" loading="lazy" style="width:560px;">
+  <div class="manual-image-note">実際の画面例（端末名・シリアル番号・操作者名・ルームコード等は公開用にぼかしています）　※画像をクリックすると、このページ内で拡大表示できます。</div>
+</div>
+
+5. 操作が終わったら、Neat端末が通常の画面に戻っていることを確認して遠隔操作を終了します。
 
 !!! warning "ミーティングを開始した場合は、退室してから遠隔操作を終了"
     遠隔操作中にZoom等のミーティングを開始した場合は、**必ずミーティングから退室した状態で遠隔操作を終了します。**
@@ -55,19 +73,3 @@ Neat Pulseは、離れた場所にあるNeat端末の状態を確認し、必要
 
 !!! note "受信校側で確認が必要な場合"
     端末の設定によっては、遠隔操作を開始するときに **受信校側で許可操作が必要** になる場合があります。
-
-!!! warning "遠隔操作できないとき"
-    次の2点を確認します。
-
-    - 対象端末が **オンライン** になっているか
-    - 端末側で **Remote controlが許可** されているか
-
----
-
-## 遠隔授業での使い方
-
-受信校からNeat端末のトラブル連絡があった場合は、次の順で対応します。
-
-**受信校から連絡 → Neat Pulseで状態確認 → オンラインなら遠隔操作 → オフラインなら受信校側で電源・ネットワークを確認**
-
-この流れを基本にすると、受信校に細かな操作を依頼する前に、配信側で確認できる範囲を切り分けることができます。

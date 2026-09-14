@@ -6,34 +6,36 @@
 
 ## 授業開始までにやること
 
-登録方法は、**個別登録**と**CSV一括登録**の2通りです。
+登録方法は、**個別登録**と**CSV一括登録**の2通りです。作業量に合わせて選びます。
 
-### 個別に登録する場合
+<div class="admin-choice-grid">
+  <div class="admin-choice-card">
+    <span class="admin-choice-card__eyebrow">少人数・年度途中の追加</span>
+    <strong>個別に登録する</strong>
+    <ol>
+      <li><a href="01-student-registration/">生徒を登録する</a></li>
+      <li><a href="02-class-create/">クラスを作成する</a></li>
+      <li><a href="03-class-members/">生徒・担当教員をクラスに所属させる</a></li>
+      <li><a href="04-qr/">QRコードを出力・送付する</a></li>
+    </ol>
+  </div>
 
-ブラウザから1件ずつ設定します。
-
-1. **[生徒を登録する](01-student-registration.md)**
-2. **[クラスを作成する](02-class-create.md)**
-3. **[生徒・担当教員をクラスに所属させる](03-class-members.md)**
-4. **[QRコードを出力・送付する](04-qr.md)**
-
-### CSVでまとめて登録する場合
-
-生徒やクラスが多い場合は、CSVを使って**生徒登録・学校所属・クラス作成・クラス所属**をまとめて行えます。
-
-[CSVで一括登録する](05-bulk-import.md){ .md-button .md-button--primary }
-
-一括登録後は、[QRコードを出力・送付する](04-qr.md)へ進みます。
-
----
+  <div class="admin-choice-card">
+    <span class="admin-choice-card__eyebrow">複数の生徒・クラスをまとめて準備</span>
+    <strong>CSVでまとめて登録する</strong>
+    <p>生徒登録・学校所属・クラス作成・クラス所属をまとめて行います。</p>
+    <p><a href="05-bulk-import/">CSV一括登録を確認する →</a></p>
+    <p>一括登録後は、<a href="04-qr/">QRコードを出力・送付する</a>へ進みます。</p>
+  </div>
+</div>
 
 ## 毎年度行うとき
 
-年度が変わるときは、次のページを確認します。
-
-[年度更新](02-annual-renewal.md){ .md-button .md-button--primary }
-
-年度更新では、**生徒 → クラス → 所属 → QRコード**を新年度用に更新します。
+<div class="admin-annual-card">
+  <strong>年度が変わるとき</strong><br>
+  <a href="02-annual-renewal/">年度更新を確認する →</a><br>
+  生徒 → クラス → 所属 → QRコードを新年度用に更新します。
+</div>
 
 ---
 

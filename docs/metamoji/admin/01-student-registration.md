@@ -30,6 +30,9 @@
 
 ［ユーザー一覧］から生徒を新しく登録します。
 
+<img src="../../../images/metamoji/admin/user-list.svg" alt="ユーザー一覧の画面例" loading="lazy" style="width:360px; max-width:100%; height:auto; display:block; margin:0.8rem 0;">
+<small>画面例（公式マニュアルを参考にした公開用イメージ）</small>
+
 ### 入力する内容
 
 | 項目 | 入力・選択する内容 |
@@ -60,6 +63,9 @@
 を開きます。
 
 対象生徒を、授業を受ける学校に所属させます。
+
+<img src="../../../images/metamoji/admin/school-assignment.svg" alt="ユーザーを学校に振り分ける画面例" loading="lazy" style="width:330px; max-width:100%; height:auto; display:block; margin:0.8rem 0;">
+<small>学校名・氏名は公開用のダミー情報です。</small>
 
 ### 最低限確認する内容
 

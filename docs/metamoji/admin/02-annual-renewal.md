@@ -26,6 +26,9 @@
 
 準備中は、必要に応じて**［公開する］をオフ**にします。
 
+<img src="../../../images/metamoji/admin/year-register.svg" alt="新年度を登録する画面例" loading="lazy" style="width:340px; max-width:100%; height:auto; display:block; margin:0.8rem 0;">
+<small>画面例（公式マニュアルを参考にした公開用イメージ）</small>
+
 **年度一覧に新年度が表示されれば完了です。**
 
 ---
@@ -37,6 +40,9 @@
 **トップ ＞ 団体管理 ＞ 全項目一括登録**
 
 年度更新に使用するExcelをダウンロードします。
+
+<img src="../../../images/metamoji/admin/bulk-import.svg" alt="全項目一括登録の画面例" loading="lazy" style="width:380px; max-width:100%; height:auto; display:block; margin:0.8rem 0;">
+<small>同じ画面から、登録用ファイルの取得とアップロードを行います。</small>
 
 !!! tip "編集前のファイルを残す"
     ダウンロードした元ファイルは、そのまま保存しておきます。編集用は別名で保存してから作業します。
@@ -91,6 +97,9 @@
 **トップ ＞ 団体管理 ＞ 年度の切り替え**
 
 新年度の内容を確認してから、年度を切り替えます。
+
+<img src="../../../images/metamoji/admin/year-switch.svg" alt="年度を切り替える画面例" loading="lazy" style="width:330px; max-width:100%; height:auto; display:block; margin:0.8rem 0;">
+<small>対象年度を選択してから年度を切り替えます。</small>
 
 !!! danger "切り替える前に確認"
     団体管理から年度を切り替えると、団体内の学校に反映されます。対象年度を必ず確認してから実行します。

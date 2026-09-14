@@ -14,6 +14,8 @@
 
 授業で使用するZoomミーティングを作成します。
 
+[ミーティングの作成手順を確認する](01-create-meeting.md){ .md-button .md-button--primary }
+
 ### ホストに設定するアドレス
 
 !!! note "後日追記"

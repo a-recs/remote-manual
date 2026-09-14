@@ -52,7 +52,7 @@
       <strong>ATEM Mini Proの設定を確認する</strong>
       <p>授業で使用する設定になっていることを確認します。</p>
       <div class="lesson-step-links">
-        <a href="../atem-mini-pro/">ATEM Mini Proの操作を見る</a>
+        <a href="../atem-mini-pro/intro/">ATEM Mini Proの操作を見る</a>
       </div>
     </div>
   </div>
@@ -78,7 +78,7 @@
       <strong>必要に応じてATEM Mini Proで映像を切り替える</strong>
       <p>授業場面に応じて、配信する映像を切り替えます。</p>
       <div class="lesson-step-links">
-        <a href="../atem-mini-pro/">ATEM Mini Proの操作を見る</a>
+        <a href="../atem-mini-pro/intro/">ATEM Mini Proの操作を見る</a>
       </div>
     </div>
   </div>

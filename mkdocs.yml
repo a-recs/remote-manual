@@ -27,9 +27,9 @@ nav:
       - ミーティングを作成する: zoom/01-create-meeting.md
   - Neat Pulse: neat-pulse/index.md
   - ATEM Mini Pro:
-      - atem-mini-pro/index.md
-      - 本体操作: atem-mini-pro/operation/index.md
-      - ATEM Software Control: atem-mini-pro/software-control/index.md
+      - はじめに: atem-mini-pro/intro.md
+      - ATEM本体操作: atem-mini-pro/operation.md
+      - ATEM Software Control: atem-mini-pro/software-control.md
 
 theme:
   name: material

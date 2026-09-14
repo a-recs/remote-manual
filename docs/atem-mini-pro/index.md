@@ -1,8 +1,8 @@
-# ATEM Mini Pro
+# はじめに
 
 <div class="manual-home-grid">
   <a class="manual-home-card" href="operation/">
-    <strong>本体操作</strong>
+    <strong>ATEM本体操作</strong>
     <span>ATEM Mini Pro本体の各ボタンや基本操作を確認する</span>
   </a>
 

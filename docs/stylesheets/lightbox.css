@@ -14,6 +14,14 @@
   transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
 }
 
+/* 操作マニュアルのスクリーンショットは本文幅いっぱいに表示する */
+.manual-screenshot {
+  width: 100%;
+  max-width: 100%;
+  margin: 0.55rem 0 1.15rem;
+  background: var(--md-default-bg-color);
+}
+
 .manual-lightbox-thumb:hover,
 .manual-lightbox-thumb:focus-visible {
   transform: translateY(-0.08rem);
@@ -100,6 +108,12 @@
 }
 
 @media screen and (max-width: 40em) {
+  .manual-screenshot {
+    margin-top: 0.4rem;
+    margin-bottom: 0.9rem;
+    border-radius: 0.45rem;
+  }
+
   .manual-lightbox__inner {
     max-width: 96vw;
     max-height: 94vh;

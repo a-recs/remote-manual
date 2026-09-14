@@ -22,7 +22,9 @@ nav:
           - CSV一括登録: metamoji/admin/05-bulk-import.md
           - QRコード: metamoji/admin/04-qr.md
           - 年度更新: metamoji/admin/02-annual-renewal.md
-  - Zoom: zoom/index.md
+  - Zoom:
+      - zoom/index.md
+      - ミーティングを作成する: zoom/01-create-meeting.md
   - Neat Pulse: neat-pulse/index.md
   - ATEM Mini Pro:
       - atem-mini-pro/index.md

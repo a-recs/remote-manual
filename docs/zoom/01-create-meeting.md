@@ -18,13 +18,13 @@
 
 Zoom Web画面の右上にある**9点メニュー**をクリックし、**「ミーティング」**を選択します。
 
-![9点メニューからミーティングを開く](../images/zoom/01-product-menu.svg)
+![9点メニューからミーティングを開く](../images/zoom/01-product-menu.svg){ .manual-lightbox-thumb .manual-screenshot loading="lazy" }
 
 ### 2　「ミーティングをスケジュール」をクリックする
 
 「ミーティング」画面が表示されたら、画面右上の**「ミーティングをスケジュール」**をクリックします。
 
-![ミーティング画面からスケジュールする](../images/zoom/02-meetings-page.svg)
+![ミーティング画面からスケジュールする](../images/zoom/02-meetings-page.svg){ .manual-lightbox-thumb .manual-screenshot loading="lazy" }
 
 ---
 
@@ -32,7 +32,7 @@ Zoom Web画面の右上にある**9点メニュー**をクリックし、**「�
 
 9点メニューから**「ホーム」**を開き、画面中央の**「スケジュール」**をクリックします。
 
-![ホーム画面からスケジュールする](../images/zoom/03-home-schedule.svg)
+![ホーム画面からスケジュールする](../images/zoom/03-home-schedule.svg){ .manual-lightbox-thumb .manual-screenshot loading="lazy" }
 
 !!! note
     方法1・方法2のどちらを使用しても、同じ**「ミーティングをスケジュールする」**画面が開きます。
@@ -50,7 +50,7 @@ Zoom Web画面の右上にある**9点メニュー**をクリックし、**「�
 
 その他の項目は、基本的にデフォルト設定のままで使用します。
 
-![ミーティングの基本情報を設定する](../images/zoom/04-schedule-basic.svg)
+![ミーティングの基本情報を設定する](../images/zoom/04-schedule-basic.svg){ .manual-lightbox-thumb .manual-screenshot loading="lazy" }
 
 ### 4　録画が必要な場合
 
@@ -58,7 +58,7 @@ Zoom Web画面の右上にある**9点メニュー**をクリックし、**「�
 
 その他の項目は、基本的にデフォルト設定のままで使用します。
 
-![自動レコーディングを設定する](../images/zoom/05-schedule-options.svg)
+![自動レコーディングを設定する](../images/zoom/05-schedule-options.svg){ .manual-lightbox-thumb .manual-screenshot loading="lazy" }
 
 ### 5　「代替ホスト」を設定する
 
@@ -69,7 +69,7 @@ Zoom Web画面の右上にある**9点メニュー**をクリックし、**「�
 
 入力欄からそれぞれのアカウントを選択し、**「適用」**します。
 
-![代替ホストを設定する](../images/zoom/06-alternative-host.svg)
+![代替ホストを設定する](../images/zoom/06-alternative-host.svg){ .manual-lightbox-thumb .manual-screenshot loading="lazy" }
 
 ### 6　「保存」をクリックする
 
@@ -77,7 +77,7 @@ Zoom Web画面の右上にある**9点メニュー**をクリックし、**「�
 
 保存したミーティングは、**「予定されているミーティング」**の一覧に表示されます。
 
-![作成したミーティングを確認する](../images/zoom/07-created-meeting.svg)
+![作成したミーティングを確認する](../images/zoom/07-created-meeting.svg){ .manual-lightbox-thumb .manual-screenshot loading="lazy" }
 
 ---
 

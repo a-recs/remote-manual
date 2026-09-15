@@ -8,7 +8,7 @@ ATEM Mini Proは、パソコンやカメラなどから入力された複数の�
 
 まずは、ATEM Software Controlの画面で、出力する映像と入力されている映像の関係を確認します。
 
-![ATEM Software Controlの画面。左上にPROGRAM、左下にPREVIEWがあり、それぞれにCAM1からCAM4の選択ボタンが並んでいる](../../images/Atem/ATEMSoft.png)
+![ATEM Mini ProのMultiview画面](../images/Atem/atem-multiview-overview.jpg)
 
 | 表示 | 意味 |
 | --- | --- |
@@ -24,21 +24,24 @@ CAM1～CAM4から映像を選び、**PROGRAM**には配信中の映像、**PREVI
 
 1. ATEM Software Controlを起動します。
 2. 背景にしたい映像を選びます。
-3. **KEY1 ON AIR**を押します。
+3. **ON AIR**を押します。（スイッチが赤に光ります）
 
-背景映像の前に教員映像が表示されます。もう一度**KEY1 ON AIR**を押すと、教員映像が非表示になります。
+背景映像の前に教員映像が表示されます。もう一度**ON AIR**を押すと、教員映像が非表示になります。
+![ATEM Software Controlでクロマキー合成をしている際の画面例](../images/Atem/atem-chroma-before-key1.png)
 
 ### 教員映像を薄く表示する
 
 1. Tバーが一番下にあることを確認します。
-2. **KEY1**を選択します。
+
+    <img src="../../images/Atem/atem-tbar-bottom.png" alt="白抜きで合成する際のTバー画面" width="90">
+
+2. **KEY1**を選択します。（スイッチが黄色に光ります）
+
+    ![白抜きで合成する際の画面例KEY1](../images/Atem/atem-next-transition-key1.png)
+
 3. Tバーを上げて、教員映像の濃さを調整します。
 
 板書や教材と教員映像が重なる場合に有効です。
-
-### クロマキーを調整する
-
-クロマキーの設定は、ATEM Software Control上でキーの種類や抜き取る背景色などを調整します。調整後は、合成結果を確認してから授業で使用します。
 
 ### クロマキー合成の表示例
 

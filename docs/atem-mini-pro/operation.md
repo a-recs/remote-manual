@@ -1,12 +1,12 @@
-# 本体操作
+# ATEM本体操作
 
 ATEM Mini Pro本体で、授業中に使用する基本操作を説明します。
 
-![ATEM Mini Pro本体](../images/Atem/Atem01.png){ #atem-main-photo }
+![ATEM Mini Pro本体](../../images/Atem/Atem01.png){ #atem-main-photo }
 
 *ATEM Mini Pro本体。1〜4のボタンで入力映像を選択します。*
 
-<img id="atem-follow-photo" src="../images/Atem/Atem01.png" alt="ATEM Mini Pro本体（追従表示）" aria-hidden="true">
+<img id="atem-follow-photo" src="../../images/Atem/Atem01.png" alt="ATEM Mini Pro本体（追従表示）" aria-hidden="true">
 
 <style>
   #atem-follow-photo {
@@ -135,40 +135,13 @@ ATEM Software ControlのMedia Poolへあらかじめ登録した静止画を表�
 !!! note "通常の遠隔授業で使用"
     教材画面の上に教師映像を重ねるクロマキー表示で使用します。
 
-### 8. RECORD
-
-USB-C経由で外部ストレージを接続している場合に、ATEM Mini Proで録画します。
-
-| ボタン | 動作 |
-| --- | --- |
-| REC | 録画を開始する |
-| STOP | 録画を停止する |
-
-!!! note "必要なときだけ使用"
-    通常の授業配信では必須ではありません。
-
-### 9. STREAM
-
-YouTubeなどへATEM Mini Pro本体から直接ライブ配信するときに使用します。
-
-| ボタン | 動作 |
-| --- | --- |
-| ON AIR | ライブ配信を開始する |
-| OFF | ライブ配信を停止する |
-
-!!! note "通常の遠隔授業では操作不要"
-    Zoomを使った通常の遠隔授業では基本的に使用しません。
-
-!!! warning "KEYのONとは別の機能です"
-    STREAMのON AIRはライブ配信の開始、KEYのONはキー合成の表示です。押し間違えないよう、ボタンのグループ名を確認してください。
-
-### 10. DURATION
+### 8. DURATION
 
 AUTOによる映像切り替えにかける時間を **0.5・1.0・1.5・2.0秒** から選びます。
 
 たとえば **MIX ＋ 1.0秒 ＋ AUTO** なら、現在の映像から次の映像へ1秒かけて切り替わります。
 
-### 11. EFFECT
+### 9. EFFECT
 
 AUTOで映像を切り替えるときのトランジション（場面転換）効果を選びます。
 
@@ -182,7 +155,7 @@ AUTOで映像を切り替えるときのトランジション（場面転換）�
 !!! tip "通常の遠隔授業ではMIXがおすすめ"
     MIXは切り替わりが自然で、初めてでも使いやすい効果です。
 
-### 12. VIDEO OUT
+### 10. VIDEO OUT
 
 背面の **HDMI OUT端子**に何を表示するか選択します。Program映像そのものを切り替える操作ではなく、確認用HDMI出力を変更する機能です。
 
@@ -195,11 +168,11 @@ AUTOで映像を切り替えるときのトランジション（場面転換）�
 !!! tip "合成結果を確認するとき"
     クロマキーなどを含む完成映像の確認には **PGM** を使用します。
 
-### 13. CUT
+### 11. CUT
 
 現在の映像から次の映像へ瞬時に切り替えます。トランジション効果は使用しません。
 
-### 14. AUTO
+### 12. AUTO
 
 EFFECTで選んだ効果とDURATIONで選んだ時間を使い、映像を自動的に切り替えます。
 
@@ -207,7 +180,7 @@ EFFECTで選んだ効果とDURATIONで選んだ時間を使い、映像を自動
     **MIX ＋ 1.0秒 ＋ AUTO**<br>
     → 1秒かけて滑らかに映像が切り替わります。
 
-### 15. FTB
+### 13. FTB
 
 **FTB（Fade To Black）**は、現在のProgram映像全体を徐々に黒画面へフェードする機能です。もう一度押すと、黒画面から元の映像へ戻ります。配信の開始・終了時などに使用できます。
 

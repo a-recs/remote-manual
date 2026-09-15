@@ -2,7 +2,7 @@
 
 ATEM Software Controlは、ATEM Mini Proをパソコン上から操作するためのソフトウェアです。
 
-![ATEM Software Control の全体画面](../images/Atem/ATEMSoft.png)
+![ATEM Software Control の全体画面](../../images/Atem/ATEMSoft.png)
 
 *ATEM Software Control の全体画面*
 
@@ -51,11 +51,11 @@ Software Control画面上の**CUT**を選択すると、プログラムとプレ
 ### クロマキー合成の表示例
 
 <figure class="chroma-key-example">
-  <img src="../images/Atem/chroma-key-overview.jpg" alt="グリーンバックの教員映像と、背景を除去して教材上に合成した映像を並べたマルチビュー画面">
+  <img src="../../images/Atem/chroma-key-overview.jpg" alt="グリーンバックの教員映像と、背景を除去して教材上に合成した映像を並べたマルチビュー画面">
   <figcaption>グリーンバックの教員映像と、背景を除去して教材上に合成した映像の例</figcaption>
 </figure>
 
 <figure class="chroma-key-example">
-  <img src="../images/Atem/chroma-key-white-overlay.png" alt="教材上に教員映像を白抜き・半透明で表示した画面">
+  <img src="../../images/Atem/chroma-key-white-overlay.png" alt="教材上に教員映像を白抜き・半透明で表示した画面">
   <figcaption>教材の文字や図を隠しにくくするため、教員映像を白抜き・半透明で表示した例</figcaption>
 </figure>

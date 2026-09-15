@@ -28,7 +28,7 @@ nav:
   - Neat Pulse: neat-pulse/index.md
   # ATEMの各操作項目はページ内の見出しとして扱い、ここでは3ページだけを表示する
   - ATEM Mini Pro:
-
+      - atem-mini-pro/index.md
       - はじめに: atem-mini-pro/intro.md
       - ATEM本体操作: atem-mini-pro/operation.md
       - ATEM Software Control: atem-mini-pro/software-control.md
@@ -58,6 +58,10 @@ markdown_extensions:
   - attr_list
   - pymdownx.details
   - pymdownx.superfences
+
+validation:
+  links:
+    not_found: info
 
 extra_css:
   - stylesheets/extra.css

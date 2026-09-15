@@ -27,7 +27,7 @@
     <span>受信校のNeat端末の状態確認と遠隔操作を行います。</span>
   </a>
 
-  <a class="manual-home-card" href="atem-mini-pro/intro/">
+  <a class="manual-home-card" href="atem-mini-pro/">
     <span class="manual-home-card__eyebrow">配信映像を切り替える</span>
     <strong>ATEM Mini Pro</strong>
     <span>遠隔授業で使用する映像の切り替えと合成の基本操作を確認します。</span>

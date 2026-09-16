@@ -2,9 +2,27 @@
 
 Neat Pulseは、離れた場所にあるNeat端末の状態を確認し、必要に応じて遠隔操作するために使用します。
 
-本マニュアルでは、遠隔授業で必要な操作に絞って説明します。
+!!! tip "Zoom操作はWebコントローラーを優先"
+    受信校のZoom参加状況の確認、ミーティングへの参加、Zoom参加中の操作は、**Zoom RoomsのWebコントローラーを優先して使用します。**
+
+    Neat Pulseは、**Neat端末そのものの状態確認・遠隔操作**や、Webコントローラーで対応できない場合の補助として使用します。
+
+[Zoom Rooms Webコントローラーの操作を確認する](../zoom/02-receiver-view/){ .md-button }
 
 [Neat Pulseを開く](https://pulse.neat.no/){ .md-button .md-button--primary target="_blank" }
+
+---
+
+## Zoom Rooms Webコントローラーとの使い分け
+
+| 状況 | 使用するもの |
+|---|---|
+| 受信校のZoom参加状況を確認する | **Zoom Rooms Webコントローラー** |
+| 受信校をZoomミーティングへ参加させる | **Zoom Rooms Webコントローラー** |
+| Zoom参加中の操作を行う | **Zoom Rooms Webコントローラー** |
+| Neat端末の状態を確認する | **Neat Pulse** |
+| Neat端末そのものを遠隔操作する | **Neat Pulse** |
+| Webコントローラーで対応できないトラブル | **Neat Pulse** |
 
 ---
 
@@ -73,3 +91,11 @@ WebブラウザでNeat Pulseを開き、ログインします。
 
 !!! note "受信校側で確認が必要な場合"
     端末の設定によっては、遠隔操作を開始するときに **受信校側で許可操作が必要** になる場合があります。
+
+---
+
+## 4　補足：Neat PulseからZoomへ参加させる
+
+受信校が自分でZoomへ参加できず、**Zoom Rooms Webコントローラーでも対応できない場合**は、Neat PulseからNeat端末を遠隔操作して参加操作を補助します。
+
+この方法は通常運用ではなく、**補助的な参加方法**として使用します。

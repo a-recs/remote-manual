@@ -24,7 +24,7 @@ Zoom Web画面の右上にある**9点メニュー**をクリックし、**「�
 
 「ミーティング」画面が表示されたら、画面右上の**「ミーティングをスケジュール」**をクリックします。
 
-![ミーティング画面からスケジュールする](../images/zoom/02-meetings-page.svg){ .manual-lightbox-thumb width="500" loading="lazy" }
+![ミーティング画面からスケジュールする](../images/zoom/02-meetings-page.svg){ .manual-lightbox-thumb width="560" loading="lazy" }
 
 ---
 
@@ -32,7 +32,7 @@ Zoom Web画面の右上にある**9点メニュー**をクリックし、**「�
 
 9点メニューから**「ホーム」**を開き、画面中央の**「スケジュール」**をクリックします。
 
-![ホーム画面からスケジュールする](../images/zoom/03-home-schedule.svg){ .manual-lightbox-thumb width="500" loading="lazy" }
+![ホーム画面からスケジュールする](../images/zoom/03-home-schedule.svg){ .manual-lightbox-thumb width="560" loading="lazy" }
 
 !!! note
     方法1・方法2のどちらを使用しても、同じ**「ミーティングをスケジュールする」**画面が開きます。
@@ -58,18 +58,18 @@ Zoom Web画面の右上にある**9点メニュー**をクリックし、**「�
 
 その他の項目は、基本的にデフォルト設定のままで使用します。
 
-![自動レコーディングを設定する](../images/zoom/05-schedule-options.svg){ .manual-lightbox-thumb width="500" loading="lazy" }
+![自動レコーディングを設定する](../images/zoom/05-schedule-options.svg){ .manual-lightbox-thumb width="650" loading="lazy" }
 
 ### 5　「代替ホスト」を設定する
 
 **「代替ホスト」**には、次の2つのアカウントを設定します。
 
 - **配信室のアカウント**
-- **遠隔のホストのアカウント**
+- **遠隔ホストのアカウント**
 
 入力欄からそれぞれのアカウントを選択し、**「適用」**します。
 
-![代替ホストを設定する](../images/zoom/06-alternative-host.svg){ .manual-lightbox-thumb width="500" loading="lazy" }
+![代替ホストを設定する](../images/zoom/06-alternative-host.svg){ .manual-lightbox-thumb width="650" loading="lazy" }
 
 ### 6　「保存」をクリックする
 
@@ -77,7 +77,7 @@ Zoom Web画面の右上にある**9点メニュー**をクリックし、**「�
 
 保存したミーティングは、**「予定されているミーティング」**の一覧に表示されます。
 
-![作成したミーティングを確認する](../images/zoom/07-created-meeting.svg){ .manual-lightbox-thumb width="500" loading="lazy" }
+![作成したミーティングを確認する](../images/zoom/07-created-meeting.svg){ .manual-lightbox-thumb width="560" loading="lazy" }
 
 ---
 

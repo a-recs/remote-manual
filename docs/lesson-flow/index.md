@@ -28,7 +28,7 @@
       <strong>Zoomミーティングを作成する</strong>
       <p>授業用のZoomミーティングを作成します。</p>
       <div class="lesson-step-links">
-        <a href="../zoom/">Zoomの操作を見る</a>
+        <a href="../zoom/01-create-meeting/">ミーティング作成を見る</a>
       </div>
     </div>
   </div>
@@ -36,12 +36,13 @@
   <div class="lesson-step">
     <span class="lesson-step-number">2</span>
     <div class="lesson-step-body">
-      <strong>受信校の入室・左右の画面を確認する</strong>
-      <p>受信校がZoomに入室していることと、左右それぞれの画面に意図した映像が表示されていることを確認します。</p>
-      <p>基本は受信校が入室します。入室していない場合は、必要に応じてNeat Pulseから遠隔操作して参加させます。</p>
+      <strong>受信校の入室・画面表示を確認する</strong>
+      <p>受信校がZoomに入室していることと、授業用の画面表示になっていることを確認します。</p>
+      <p>遠隔操作が必要な場合は、まず <strong>Zoom Rooms Webコントローラー</strong> を使用します。Webコントローラーで対応できない場合や、Neat端末そのものを操作する必要がある場合のみ <strong>Neat Pulse</strong> を使用します。</p>
       <div class="lesson-step-links">
-        <a href="../zoom/">Zoomの操作を見る</a>
-        <a href="../neat-pulse/">Neat Pulseで参加させる</a>
+        <a href="../zoom/02-receiver-view/">受信校を操作する</a>
+        <a href="../zoom/03-before-class/">授業前の確認を見る</a>
+        <a href="../neat-pulse/">Neat Pulseの補助操作を見る</a>
       </div>
     </div>
   </div>

@@ -25,7 +25,7 @@ nav:
   - Zoom:
       - zoom/index.md
       - ミーティングを作成する: zoom/01-create-meeting.md
-      - 受信校のビューを設定する: zoom/02-receiver-view.md
+      - 受信校を操作する: zoom/02-receiver-view.md
       - 授業開始前に確認する: zoom/03-before-class.md
   - Neat Pulse: neat-pulse/index.md
   # ATEMの各操作項目はページ内の見出しとして扱い、ここでは3ページだけを表示する

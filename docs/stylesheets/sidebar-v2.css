@@ -34,7 +34,7 @@
   box-shadow: none !important;
 }
 
-/* 子メニューを持つトップ項目（現在はMetaMoJi） */
+/* 子メニューを持つトップ項目 */
 .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav__container {
   display: flex !important;
   align-items: stretch !important;
@@ -91,7 +91,6 @@
 
 /* ==================================================
    2. トップ項目配下
-   操作編 / 管理者編などを同じ位置・同じ体裁にする
 ================================================== */
 .md-nav--primary > .md-nav__list > .md-nav__item > .md-nav {
   margin-top: 0.16rem !important;
@@ -185,4 +184,24 @@
   > .md-nav > .md-nav__list > .md-nav__item > .md-nav .md-nav__link {
   font-size: 0.77rem !important;
   line-height: 1.45 !important;
+}
+
+/* ==================================================
+   4. Zoom配下は、個別ページを開いても兄弟メニューを残す
+================================================== */
+.md-nav--primary > .md-nav__list > .md-nav__item:has(
+  > .md-nav__container > a.md-nav__link[href$="/zoom/"]
+) > .md-nav {
+  display: block !important;
+  visibility: visible !important;
+  max-height: none !important;
+  opacity: 1 !important;
+}
+
+.md-nav--primary > .md-nav__list > .md-nav__item:has(
+  > .md-nav__container > a.md-nav__link[href$="/zoom/"]
+) > .md-nav > .md-nav__list > .md-nav__item {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }

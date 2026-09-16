@@ -18,13 +18,19 @@
 
 Zoom Web画面の右上にある**9点メニュー**をクリックし、**「ミーティング」**を選択します。
 
-![9点メニューからミーティングを開く](../images/zoom/01-product-menu.svg){ .manual-lightbox-thumb .manual-screenshot loading="lazy" }
+<div class="manual-image-wrap">
+  <img src="../images/zoom/01-product-menu.svg" alt="9点メニューからミーティングを開く" class="manual-lightbox-thumb" data-full="../images/zoom/01-product-menu.svg" data-caption="9点メニューからミーティングを開く" loading="lazy" style="width:500px; max-width:100%;">
+  <div class="manual-image-note">実際の画面例　※画像をクリックすると、このページ内で拡大表示できます。</div>
+</div>
 
 ### 2　「ミーティングをスケジュール」をクリックする
 
 「ミーティング」画面が表示されたら、画面右上の**「ミーティングをスケジュール」**をクリックします。
 
-![ミーティング画面からスケジュールする](../images/zoom/02-meetings-page.svg){ .manual-lightbox-thumb .manual-screenshot loading="lazy" }
+<div class="manual-image-wrap">
+  <img src="../images/zoom/02-meetings-page.svg" alt="ミーティング画面からスケジュールする" class="manual-lightbox-thumb" data-full="../images/zoom/02-meetings-page.svg" data-caption="ミーティング画面からスケジュールする" loading="lazy" style="width:500px; max-width:100%;">
+  <div class="manual-image-note">実際の画面例　※画像をクリックすると、このページ内で拡大表示できます。</div>
+</div>
 
 ---
 
@@ -32,7 +38,10 @@ Zoom Web画面の右上にある**9点メニュー**をクリックし、**「�
 
 9点メニューから**「ホーム」**を開き、画面中央の**「スケジュール」**をクリックします。
 
-![ホーム画面からスケジュールする](../images/zoom/03-home-schedule.svg){ .manual-lightbox-thumb .manual-screenshot loading="lazy" }
+<div class="manual-image-wrap">
+  <img src="../images/zoom/03-home-schedule.svg" alt="ホーム画面からスケジュールする" class="manual-lightbox-thumb" data-full="../images/zoom/03-home-schedule.svg" data-caption="ホーム画面からスケジュールする" loading="lazy" style="width:500px; max-width:100%;">
+  <div class="manual-image-note">実際の画面例　※画像をクリックすると、このページ内で拡大表示できます。</div>
+</div>
 
 !!! note
     方法1・方法2のどちらを使用しても、同じ**「ミーティングをスケジュールする」**画面が開きます。
@@ -50,7 +59,10 @@ Zoom Web画面の右上にある**9点メニュー**をクリックし、**「�
 
 その他の項目は、基本的にデフォルト設定のままで使用します。
 
-![ミーティングの基本情報を設定する](../images/zoom/04-schedule-basic.svg){ .manual-lightbox-thumb .manual-screenshot loading="lazy" }
+<div class="manual-image-wrap">
+  <img src="../images/zoom/04-schedule-basic.svg" alt="ミーティングの基本情報を設定する" class="manual-lightbox-thumb" data-full="../images/zoom/04-schedule-basic.svg" data-caption="ミーティングの基本情報を設定する" loading="lazy" style="width:500px; max-width:100%;">
+  <div class="manual-image-note">実際の画面例　※画像をクリックすると、このページ内で拡大表示できます。</div>
+</div>
 
 ### 4　録画が必要な場合
 
@@ -58,7 +70,10 @@ Zoom Web画面の右上にある**9点メニュー**をクリックし、**「�
 
 その他の項目は、基本的にデフォルト設定のままで使用します。
 
-![自動レコーディングを設定する](../images/zoom/05-schedule-options.svg){ .manual-lightbox-thumb .manual-screenshot loading="lazy" }
+<div class="manual-image-wrap">
+  <img src="../images/zoom/05-schedule-options.svg" alt="自動レコーディングを設定する" class="manual-lightbox-thumb" data-full="../images/zoom/05-schedule-options.svg" data-caption="自動レコーディングを設定する" loading="lazy" style="width:500px; max-width:100%;">
+  <div class="manual-image-note">実際の画面例　※画像をクリックすると、このページ内で拡大表示できます。</div>
+</div>
 
 ### 5　「代替ホスト」を設定する
 
@@ -69,7 +84,10 @@ Zoom Web画面の右上にある**9点メニュー**をクリックし、**「�
 
 入力欄からそれぞれのアカウントを選択し、**「適用」**します。
 
-![代替ホストを設定する](../images/zoom/06-alternative-host.svg){ .manual-lightbox-thumb .manual-screenshot loading="lazy" }
+<div class="manual-image-wrap">
+  <img src="../images/zoom/06-alternative-host.svg" alt="代替ホストを設定する" class="manual-lightbox-thumb" data-full="../images/zoom/06-alternative-host.svg" data-caption="代替ホストを設定する" loading="lazy" style="width:500px; max-width:100%;">
+  <div class="manual-image-note">実際の画面例　※画像をクリックすると、このページ内で拡大表示できます。</div>
+</div>
 
 ### 6　「保存」をクリックする
 
@@ -77,7 +95,10 @@ Zoom Web画面の右上にある**9点メニュー**をクリックし、**「�
 
 保存したミーティングは、**「予定されているミーティング」**の一覧に表示されます。
 
-![作成したミーティングを確認する](../images/zoom/07-created-meeting.svg){ .manual-lightbox-thumb .manual-screenshot loading="lazy" }
+<div class="manual-image-wrap">
+  <img src="../images/zoom/07-created-meeting.svg" alt="作成したミーティングを確認する" class="manual-lightbox-thumb" data-full="../images/zoom/07-created-meeting.svg" data-caption="作成したミーティングを確認する" loading="lazy" style="width:500px; max-width:100%;">
+  <div class="manual-image-note">実際の画面例　※画像をクリックすると、このページ内で拡大表示できます。</div>
+</div>
 
 ---
 

@@ -348,3 +348,31 @@
   color: var(--arecs-dark-muted);
   border-left-color: rgba(134, 169, 255, 0.45);
 }
+
+
+/* A-RECS header logo */
+.md-header__button.md-logo {
+  display: flex;
+  align-items: center;
+  width: auto;
+  margin-right: 0.45rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  display: block;
+  width: auto;
+  height: 1.25rem;
+  max-width: 7rem;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 44.984375em) {
+  .md-header__button.md-logo img,
+  .md-header__button.md-logo svg {
+    height: 1.05rem;
+    max-width: 5.8rem;
+  }
+}

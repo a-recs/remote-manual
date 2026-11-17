@@ -34,6 +34,11 @@ nav:
       - はじめに: atem-mini-pro/intro.md
       - ATEM本体操作: atem-mini-pro/operation.md
       - ATEM Software Control: atem-mini-pro/software-control.md
+  - BenQ ideaCam S1 Pro:
+      - benq-ideacam-s1-pro/index.md
+      - はじめに: benq-ideacam-s1-pro/intro.md
+      - 基本操作: benq-ideacam-s1-pro/operation.md
+      - EnSpire Web版: benq-ideacam-s1-pro/enspire-web.md
 
 theme:
   name: material

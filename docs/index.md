@@ -32,6 +32,12 @@
     <strong>ATEM Mini Pro</strong>
     <span>遠隔授業で使用する映像の切り替えと合成の基本操作を確認します。</span>
   </a>
+
+  <a class="manual-home-card" href="benq-ideacam-s1-pro/">
+    <span class="manual-home-card__eyebrow">人物・手元・教材を映す</span>
+    <strong>BenQ ideaCam S1 Pro</strong>
+    <span>カメラの取り付け、Windowsでの撮影、EnSpire Web版の操作を確認します。</span>
+  </a>
 </div>
 
 ## このマニュアルの見方
@@ -47,6 +53,7 @@
 - **Zoom**：ミーティング作成、受信校のビュー設定、授業開始前の画面確認
 - **Neat Pulse**：受信校端末の状態確認・遠隔操作
 - **ATEM Mini Pro**：配信映像の切り替え・合成の基本操作
+- **BenQ ideaCam S1 Pro**：人物や手元の撮影、EnSpire Web版での操作
 
 !!! info "公開用の画面について"
     学校名・教員名・生徒名・ユーザーIDなどが必要な画面例では、**A高校・B高校、教員A、生徒01**などのダミー情報を使用します。

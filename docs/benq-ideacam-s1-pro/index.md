@@ -1,6 +1,6 @@
 # BenQ ideaCam S1 Pro
 
-BenQ ideaCam S1 Proは、教員の顔、机上の手元や教材、小さな被写体の細部を映せるUSBカメラです。初めて使うときは「はじめに」で付属品を確認し、「基本操作」でWindows PCに映像を表示します。ワイヤレスリモコンで操作するときは「EnSpire Web版」を確認してください。
+BenQ ideaCam S1 Proは、教員の顔、机上の手元や教材、小さな被写体の細部を映せるUSBカメラです。ここでは基本的な操作についてまとめています。
 
 <div class="manual-home-grid">
   <a class="manual-home-card" href="intro/">
